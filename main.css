@@ -1,0 +1,121 @@
+html {
+  font-family: "Courier New", sans-serif;
+}
+
+html body {
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+html body div img {
+  width: 5pc;
+  float: left;
+  padding: 10% 5%;
+  position: absolute;
+}
+
+html body div div {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* Fondue au noir sur les boutons du menu */
+}
+
+html body div div a {
+  text-decoration: none;
+  color: black;
+  margin: 0 1pc;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+html body div div :before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+html body div div :hover, html body div div :focus, html body div div :active {
+  color: #939598;
+}
+
+html body div div :hover:before, html body div div :focus:before, html body div div :active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+html body div #depuis {
+  font-size: 68%;
+  float: left;
+  padding: 10% 35%;
+  position: relative;
+}
+
+html body footer {
+  clear: both;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+}
+
+html body footer a {
+  font-size: 55px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 1px;
+}
+
+html body footer a:nth-of-type(1) {
+  background: url(img/ig.svg);
+  background-repeat: no-repeat;
+}
+
+html body footer a:nth-of-type(2) {
+  background: url(img/fb.svg);
+  background-repeat: no-repeat;
+}
+
+html body footer :hover {
+  opacity: 0.8;
+}
+
+html label {
+  display: none;
+  width: 26px;
+}
+
+html #toggle {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
