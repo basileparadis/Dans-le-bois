@@ -6,19 +6,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
     <div>
         <img src="img/logo.svg" alt="logo"/>
         <a id="depuis">(depuis 2020)</a>
         <div>
-            <a href="#">équipe</a>
-            <a href="#">works</a>
-            <a href="#">contact</a>
+            <a href="#equipe">équipe</a>
+            <a href="#equipe" @click="changeState('selected')">works</a>
+            <a href="#equipe">contact</a>
         </div>
     </div>
     <div>
-        <ul>
+        <a name="equipe"></a>
+        <ul v-if="state === 'selected'">
             <li></li>
             <li></li>
             <li></li>
@@ -41,5 +43,18 @@
         <a href="https://www.instagram.com/danslebois/">_</a>
         <a href="https://www.facebook.com/danslebois.studio/">_</a>
     </footer>
+    <script>
+        var listeDesTravaux = new Vue({
+            el: '#afficherTravaux',
+            data: {
+                state = 'unselected'
+            },
+            methods: {
+                changeState: function(newState) {
+                    this.state = state;
+                }
+            },
+        })
+    </script>
 </body>
 </html>
