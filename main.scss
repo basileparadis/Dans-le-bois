@@ -6,27 +6,24 @@ html {
         height: 100%;
         background-color: #e5e5e5;
 
-        div {
+        div:nth-of-type(1) {
 
             img {
                 width: 5pc;
-                float: left;
-                padding: 10% 5%;
+                top: 10%;
+                left: 5%;
                 position: absolute;
             }
 
             div {
                 text-align: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                padding: 20pc;
                 
                 /* Fondue au noir sur les boutons du menu */
                 a {
                 text-decoration: none;
                 color: black;
-                margin: 0 1pc;
+                margin: 1pc 1pc;
                 display: inline-block;
                 vertical-align: middle;
                 -webkit-transform: perspective(1px) translateZ(0);
@@ -70,34 +67,62 @@ html {
 
             #depuis {
                 font-size: 68%;
-                float: left;
-                padding: 10% 35%;
-                position: relative;
+                left: 25pc;
+                top: 10%;
+                position: absolute;
+            }
+        }
+
+        div:nth-of-type(2) {
+
+            ul{
+            padding: 4pc;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "projet1 projet2 projet3 . projet4 projet5 . . projet8"
+            "projet9 projet10 . projet13 projet14 . . projet16 ."
+            ". projet11 . . . projet6 projet7 . ."
+            ". . projet12 . projet15 . . . .";
+
+                @for $i from 1 through 16 { 
+                    li:nth-child(#{$i}) {
+                        grid-area: projet#{$i};
+                        background: url(img/mosaique/#{$i}.png) no-repeat;
+                        background-size: contain;
+                        background-position: center center;
+                        width: auto;
+                        height: 10pc;
+                        list-style-type: none;
+                    }
+                    li:hover {
+                        opacity: 0.6;
+                    }
+                }
             }
         }
 
         footer {
-            clear: both;
-            position: absolute;
-            bottom: 0%;
-            left: 50%;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
 
             a {
-                font-size: 55px;
+                font-size: 45px;
                 text-decoration: none;
-                color: white;
+                color: #e5e5e5;
                 border-radius: 5px;
                 margin-bottom: 1px;
             }
             
             a:nth-of-type(1) {
-                background: url(img/ig.svg);
-                background-repeat: no-repeat;
+                background: url(img/ig.svg) no-repeat;
             }
 
             a:nth-of-type(2) {
-                background: url(img/fb.svg);
-                background-repeat: no-repeat;
+                background: url(img/fb.svg) no-repeat;
             }
 
             :hover {
