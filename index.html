@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Dans le bois</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</head>
-<body>
-    <div>
-        <img src="img/logo.svg" alt="logo"/>
-        <a id="depuis">(depuis 2020)</a>
-        <div>
-            <a href="#equipe">équipe</a>
-            <a href="#equipe" @click="changeState('selected')">works</a>
-            <a href="#equipe">contact</a>
-        </div>
-    </div>
-    <div>
-        <a name="equipe"></a>
-        <ul v-if="state === 'selected'">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-    <footer>
-        <a href="https://www.instagram.com/danslebois/">_</a>
-        <a href="https://www.facebook.com/danslebois.studio/">_</a>
-    </footer>
-    <script>
-        var listeDesTravaux = new Vue({
-            el: '#afficherTravaux',
-            data: {
-                state = 'unselected'
-            },
-            methods: {
-                changeState: function(newState) {
-                    this.state = state;
-                }
-            },
-        })
-    </script>
-</body>
+    <head>
+        <title>Dans le bois</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <section>
+            <img src="img/logo.svg" alt="logo" id="logo"/>
+            <a id="depuis">(depuis 2020)</a>
+            <div>
+                <a href="#equipe">équipe</a>
+                <a href="#works" @click="changeState('selected')">works</a>
+                <a href="#contact">contact</a>
+            </div>
+        </section>
+        <section>
+            <a name="works"></a>
+            <ul v-if="state === 'selected'">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <a name="contact"></a>
+            <div>
+                <div id="carre"></div>
+                <div>
+                    <p><a href="mailto:info@danslebois.ca"><span>info</span>@danslebois.ca</a></p>
+                    <p><a href="mailto:denis@danslebois.ca">denis@danslebois.ca</a></p>
+                    <p><a href="mailto:goeffroy@danslebois.ca">goeffroy@danslebois.ca</a></p>
+                    <p><a href="mailto:maxime@danslebois.ca">maxime@danslebois.ca</a></p>
+                    <a href="https://www.instagram.com/danslebois/">_</a>
+                    <a href="https://www.facebook.com/danslebois.studio/">_</a>
+                </div>
+                <ul v-if="state === 'selected'">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <a href="https://www.instagram.com/danslebois/">_</a>
+            <a href="https://www.facebook.com/danslebois.studio/">_</a>
+        </footer>
+        <script>
+            var listeDesTravaux = new Vue({
+                el: 'section',
+                data: {
+                    state : 'unselected'
+                },
+                methods: {
+                    changeState: function(newState) {
+                        this.newState = state;
+                    }
+                },
+            })
+        </script>
+    </body>
 </html>

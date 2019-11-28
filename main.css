@@ -1,32 +1,35 @@
 html {
   font-family: "Courier New", sans-serif;
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 html body {
-  height: 100%;
   background-color: #e5e5e5;
 }
 
-html body div:nth-of-type(1) img {
+html body section:nth-of-type(1) {
+  height: 100vh;
+}
+
+html body section:nth-of-type(1) #logo {
   width: 5pc;
   top: 10%;
   left: 5%;
   position: absolute;
 }
 
-html body div:nth-of-type(1) div {
+html body section:nth-of-type(1) div {
+  padding-top: 50vh;
+  padding-bottom: 50vh;
   text-align: center;
-  padding: 20pc;
   /* Fondue au noir sur les boutons du menu */
 }
 
-html body div:nth-of-type(1) div a {
+html body section:nth-of-type(1) div a {
   text-decoration: none;
   color: black;
   margin: 1pc 1pc;
-  display: inline-block;
-  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -38,7 +41,7 @@ html body div:nth-of-type(1) div a {
   transition-duration: 0.2s;
 }
 
-html body div:nth-of-type(1) div :before {
+html body section:nth-of-type(1) div :before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -62,23 +65,27 @@ html body div:nth-of-type(1) div :before {
   transition-timing-function: ease-out;
 }
 
-html body div:nth-of-type(1) div :hover, html body div:nth-of-type(1) div :focus, html body div:nth-of-type(1) div :active {
+html body section:nth-of-type(1) div :hover, html body section:nth-of-type(1) div :focus, html body section:nth-of-type(1) div :active {
   color: #939598;
 }
 
-html body div:nth-of-type(1) div :hover:before, html body div:nth-of-type(1) div :focus:before, html body div:nth-of-type(1) div :active:before {
+html body section:nth-of-type(1) div :hover:before, html body section:nth-of-type(1) div :focus:before, html body section:nth-of-type(1) div :active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-html body div:nth-of-type(1) #depuis {
+html body section:nth-of-type(1) #depuis {
   font-size: 68%;
-  left: 25pc;
+  left: 30%;
   top: 10%;
-  position: absolute;
+  position: fixed;
 }
 
-html body div:nth-of-type(2) ul {
+html body section:nth-of-type(2) {
+  height: 100vh;
+}
+
+html body section:nth-of-type(2) ul {
   padding: 4pc;
   display: -ms-grid;
   display: grid;
@@ -89,7 +96,7 @@ html body div:nth-of-type(2) ul {
       grid-template-areas: "projet1 projet2 projet3 . projet4 projet5 . . projet8" "projet9 projet10 . projet13 projet14 . . projet16 ." ". projet11 . . . projet6 projet7 . ." ". . projet12 . projet15 . . . .";
 }
 
-html body div:nth-of-type(2) ul li:nth-child(1) {
+html body section:nth-of-type(2) ul li:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: projet1;
@@ -114,12 +121,12 @@ html body div:nth-of-type(2) ul li:nth-child(1) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(2) {
+html body section:nth-of-type(2) ul li:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: projet2;
@@ -144,12 +151,12 @@ html body div:nth-of-type(2) ul li:nth-child(2) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(3) {
+html body section:nth-of-type(2) ul li:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: projet3;
@@ -174,12 +181,12 @@ html body div:nth-of-type(2) ul li:nth-child(3) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(4) {
+html body section:nth-of-type(2) ul li:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   grid-area: projet4;
@@ -204,12 +211,12 @@ html body div:nth-of-type(2) ul li:nth-child(4) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(5) {
+html body section:nth-of-type(2) ul li:nth-child(5) {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
   grid-area: projet5;
@@ -234,12 +241,12 @@ html body div:nth-of-type(2) ul li:nth-child(5) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(6) {
+html body section:nth-of-type(2) ul li:nth-child(6) {
   -ms-grid-row: 3;
   -ms-grid-column: 6;
   grid-area: projet6;
@@ -264,12 +271,12 @@ html body div:nth-of-type(2) ul li:nth-child(6) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(7) {
+html body section:nth-of-type(2) ul li:nth-child(7) {
   -ms-grid-row: 3;
   -ms-grid-column: 7;
   grid-area: projet7;
@@ -294,12 +301,12 @@ html body div:nth-of-type(2) ul li:nth-child(7) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(8) {
+html body section:nth-of-type(2) ul li:nth-child(8) {
   -ms-grid-row: 1;
   -ms-grid-column: 9;
   grid-area: projet8;
@@ -324,12 +331,12 @@ html body div:nth-of-type(2) ul li:nth-child(8) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(9) {
+html body section:nth-of-type(2) ul li:nth-child(9) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: projet9;
@@ -354,12 +361,12 @@ html body div:nth-of-type(2) ul li:nth-child(9) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(10) {
+html body section:nth-of-type(2) ul li:nth-child(10) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: projet10;
@@ -384,12 +391,12 @@ html body div:nth-of-type(2) ul li:nth-child(10) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(11) {
+html body section:nth-of-type(2) ul li:nth-child(11) {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: projet11;
@@ -414,12 +421,12 @@ html body div:nth-of-type(2) ul li:nth-child(11) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(12) {
+html body section:nth-of-type(2) ul li:nth-child(12) {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: projet12;
@@ -444,12 +451,12 @@ html body div:nth-of-type(2) ul li:nth-child(12) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(13) {
+html body section:nth-of-type(2) ul li:nth-child(13) {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: projet13;
@@ -474,12 +481,12 @@ html body div:nth-of-type(2) ul li:nth-child(13) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(14) {
+html body section:nth-of-type(2) ul li:nth-child(14) {
   -ms-grid-row: 2;
   -ms-grid-column: 5;
   grid-area: projet14;
@@ -504,12 +511,12 @@ html body div:nth-of-type(2) ul li:nth-child(14) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(15) {
+html body section:nth-of-type(2) ul li:nth-child(15) {
   -ms-grid-row: 4;
   -ms-grid-column: 5;
   grid-area: projet15;
@@ -534,12 +541,12 @@ html body div:nth-of-type(2) ul li:nth-child(15) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body div:nth-of-type(2) ul li:nth-child(16) {
+html body section:nth-of-type(2) ul li:nth-child(16) {
   -ms-grid-row: 2;
   -ms-grid-column: 8;
   grid-area: projet16;
@@ -564,48 +571,133 @@ html body div:nth-of-type(2) ul li:nth-child(16) {
   transition-property: transform, -webkit-transform;
 }
 
-html body div:nth-of-type(2) ul li:hover, html body div:nth-of-type(2) ul li:focus, html body div:nth-of-type(2) ul li:active {
+html body section:nth-of-type(2) ul li:hover, html body section:nth-of-type(2) ul li:focus, html body section:nth-of-type(2) ul li:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body footer {
+html body section:nth-of-type(3) {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body section:nth-of-type(3) div #carre {
+  background: url(img/mosaique/18.png) no-repeat;
+  height: 8pc;
+}
+
+html body section:nth-of-type(3) div :nth-child(2) {
+  margin: 1.5pc auto;
+}
+
+html body section:nth-of-type(3) div p a span {
+  font-size: 150%;
+}
+
+html body section:nth-of-type(3) div a {
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+}
+
+html body section:nth-of-type(3) div a:nth-child(5) {
+  background: url(img/ig2.svg) no-repeat;
+  color: #e5e5e5;
+  font-size: 45px;
+}
+
+html body section:nth-of-type(3) div a:nth-child(6) {
+  background: url(img/fb2.svg) no-repeat;
+  color: #e5e5e5;
+  font-size: 45px;
+}
+
+html body ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  list-style-type: none;
+      grid-template-areas: ". . carreblanc" ". carrenoir1 ." "carrenoir2 . .";
+}
+
+html body ul li:nth-child(3) {
+  background: url(img/mosaique/17.png) no-repeat;
+  grid-area: "carreblanc";
+  background-size: contain;
+  background-position: center center;
+}
+
+html body ul li:nth-child(5) {
+  background: url(img/mosaique/7.png) no-repeat;
+  grid-area: "carrenoir1";
+  background-size: contain;
+  background-position: center center;
+}
+
+html body ul li:nth-child(7) {
+  background: url(img/mosaique/7.png) no-repeat;
+  grid-area: "carrenoir2";
+  background-size: contain;
+  background-position: center center;
+  width: 8pc;
+  height: 8pc;
+}
+
+html footer {
   position: fixed;
   width: 100%;
   bottom: 0;
   text-align: center;
 }
 
-html body footer a {
+html footer a {
   font-size: 45px;
   text-decoration: none;
   color: #e5e5e5;
   border-radius: 5px;
-  margin-bottom: 1px;
   display: inline-block;
+  vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
           box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
-html body footer a:nth-of-type(1) {
+html footer a:nth-of-type(1) {
   background: url(img/ig.svg) no-repeat;
 }
 
-html body footer a:nth-of-type(2) {
+html footer a:nth-of-type(2) {
   background: url(img/fb.svg) no-repeat;
 }
 
-html body footer :hover, html body footer :focus, html body footer :active {
-  -webkit-animation-name: hvr-buzz-out;
-  animation-name: hvr-buzz-out;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+html footer :hover, html footer :focus, html footer :active {
+  -webkit-transform: scale(1.3) translateZ(0);
+  transform: scale(1.3) translateZ(0);
 }
 
 @-webkit-keyframes hvr-buzz-out {
@@ -692,14 +784,5 @@ html body footer :hover, html body footer :focus, html body footer :active {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0);
   }
-}
-
-html label {
-  display: none;
-  width: 26px;
-}
-
-html #toggle {
-  display: none;
 }
 /*# sourceMappingURL=main.css.map */
