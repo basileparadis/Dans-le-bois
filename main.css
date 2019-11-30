@@ -123,7 +123,7 @@ html body section:nth-of-type(2) div area:nth-child(1) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -149,7 +149,7 @@ html body section:nth-of-type(2) div area:nth-child(2) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -175,7 +175,7 @@ html body section:nth-of-type(2) div area:nth-child(3) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -201,7 +201,7 @@ html body section:nth-of-type(2) div area:nth-child(4) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -227,7 +227,7 @@ html body section:nth-of-type(2) div area:nth-child(5) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -253,7 +253,7 @@ html body section:nth-of-type(2) div area:nth-child(6) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -279,7 +279,7 @@ html body section:nth-of-type(2) div area:nth-child(7) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -305,7 +305,7 @@ html body section:nth-of-type(2) div area:nth-child(8) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -331,7 +331,7 @@ html body section:nth-of-type(2) div area:nth-child(9) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -357,7 +357,7 @@ html body section:nth-of-type(2) div area:nth-child(10) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -383,7 +383,7 @@ html body section:nth-of-type(2) div area:nth-child(11) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -409,7 +409,7 @@ html body section:nth-of-type(2) div area:nth-child(12) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -435,7 +435,7 @@ html body section:nth-of-type(2) div area:nth-child(13) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -461,7 +461,7 @@ html body section:nth-of-type(2) div area:nth-child(14) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -487,7 +487,7 @@ html body section:nth-of-type(2) div area:nth-child(15) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -513,79 +513,89 @@ html body section:nth-of-type(2) div area:nth-child(16) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div :hover, html body section:nth-of-type(2) div :focus, html body section:nth-of-type(2) div :active {
+html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
 html body section:nth-of-type(3) {
   height: 100vh;
-  background-color: lightgray;
-  margin: 3vh;
+  width: 50vw;
+  margin: 5vh 25vw;
 }
 
 html body section:nth-of-type(3) div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
+  height: 90%;
 }
 
 html body section:nth-of-type(3) div div:nth-of-type(1) {
-  background-color: pink;
-  width: 50%;
+  background-color: #7c7778;
+  height: 75%;
 }
 
 html body section:nth-of-type(3) div div:nth-of-type(2) {
   background-color: lightblue;
-  width: 50%;
+  height: 25%;
 }
 
 html body section:nth-of-type(4) {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-html body section:nth-of-type(4) div #carre {
+html body section:nth-of-type(4) div {
+  vertical-align: middle;
+  text-align: center;
+  padding: 3em;
+}
+
+html body section:nth-of-type(4) div div:nth-of-type(1) {
   background: url(img/mosaique/carreJaune.png) no-repeat;
-  height: 8pc;
+  height: 9pc;
+  width: 9pc;
+  display: inline-block;
 }
 
-html body section:nth-of-type(4) div :nth-child(2) {
+html body section:nth-of-type(4) div div:nth-of-type(2) {
+  display: inline-block;
+  text-align: initial;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+html body section:nth-of-type(4) div div:nth-of-type(2) :nth-child(2) {
   margin: 1.5pc auto;
 }
 
-html body section:nth-of-type(4) div p a span {
+html body section:nth-of-type(4) div div:nth-of-type(2) p a span {
   font-size: 1.5em;
 }
 
-html body section:nth-of-type(4) div a {
+html body section:nth-of-type(4) div div:nth-of-type(2) a {
   text-decoration: none;
   color: black;
-  border-radius: 5px;
 }
 
-html body section:nth-of-type(4) div a:nth-child(5) {
+html body section:nth-of-type(4) div div:nth-of-type(2) a:nth-child(5) {
   background: url(img/ig2.svg) no-repeat;
   color: #e5e5e5;
   font-size: 45px;
 }
 
-html body section:nth-of-type(4) div a:nth-child(6) {
+html body section:nth-of-type(4) div div:nth-of-type(2) a:nth-child(6) {
   background: url(img/fb2.svg) no-repeat;
   color: #e5e5e5;
   font-size: 45px;
 }
 
-html body ul {
+html body section:nth-of-type(4) div div:nth-of-type(3) {
+  display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+html body section:nth-of-type(4) div div:nth-of-type(3) ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -596,21 +606,21 @@ html body ul {
       grid-template-areas: ". . carreblanc" ". carrenoir1 ." "carrenoir2 . .";
 }
 
-html body ul li:nth-child(3) {
+html body section:nth-of-type(4) div div:nth-of-type(3) ul li:nth-child(3) {
   background: url(img/mosaique/carreBlanc.png) no-repeat;
   grid-area: "carreblanc";
   background-size: contain;
   background-position: center center;
 }
 
-html body ul li:nth-child(5) {
+html body section:nth-of-type(4) div div:nth-of-type(3) ul li:nth-child(5) {
   background: url(img/mosaique/carreNoir.png) no-repeat;
   grid-area: "carrenoir1";
   background-size: contain;
   background-position: center center;
 }
 
-html body ul li:nth-child(7) {
+html body section:nth-of-type(4) div div:nth-of-type(3) ul li:nth-child(7) {
   background: url(img/mosaique/carreNoir.png) no-repeat;
   grid-area: "carrenoir2";
   background-size: contain;
@@ -624,13 +634,13 @@ html footer {
   width: 100%;
   bottom: 0;
   text-align: center;
+  padding-bottom: 1pc;
 }
 
-html footer a {
-  font-size: 45px;
-  text-decoration: none;
+html footer area {
   color: #e5e5e5;
-  border-radius: 5px;
+  width: 2em;
+  height: 2em;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -652,11 +662,11 @@ html footer a {
   transition-timing-function: ease-out;
 }
 
-html footer a:nth-of-type(1) {
+html footer area:nth-of-type(1) {
   background: url(img/ig.svg) no-repeat;
 }
 
-html footer a:nth-of-type(2) {
+html footer area:nth-of-type(2) {
   background: url(img/fb.svg) no-repeat;
 }
 

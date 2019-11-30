@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>    
     </head>
     <body>
         <section>
@@ -40,16 +40,25 @@
             </div>
         </section>
         <section>
-            <a name="focusWork"></a>
+            <a name="focusWork"></a>    
             <div>
-                <div>image</div>
+                <div>
+                    <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
+                        <slide>
+                          Slide 1 Content
+                        </slide>
+                        <slide>
+                          Slide 2 Content
+                        </slide>
+                      </carousel>
+                </div>
                 <div>texte</div>
             </div>
         </section>
         <section>
             <a name="contact"></a>
             <div>
-                <div id="carre"></div>
+                <div></div>
                 <div>
                     <p><a href="mailto:info@danslebois.ca"><span>info</span>@danslebois.ca</a></p>
                     <p><a href="mailto:denis@danslebois.ca">denis@danslebois.ca</a></p>
@@ -58,40 +67,28 @@
                     <a href="https://www.instagram.com/danslebois/">_</a>
                     <a href="https://www.facebook.com/danslebois.studio/">_</a>
                 </div>
-                <ul v-if="state === 'selected'">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div>
+                    <ul v-if="state === 'selected'">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </section>
         <footer>
-            <a href="https://www.instagram.com/danslebois/">_</a>
-            <a href="https://www.facebook.com/danslebois.studio/">_</a>
+            <area href="https://www.instagram.com/danslebois/"></area>
+            <area href="https://www.facebook.com/danslebois.studio/"></area>
         </footer>
-        <script>
-
-            import Vue from 'vue';
+        <script type="module">
             import VueCarousel from 'vue-carousel';
             Vue.use(VueCarousel);
-
-            var listeDesTravaux = new Vue({
-                el: 'section',
-                data: {
-                    state : 'unselected'
-                },
-                methods: {
-                    changeState: function(newState) {
-                        this.newState = state;
-                    }
-                },
-            })
         </script>
     </body>
 </html>
