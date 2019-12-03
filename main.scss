@@ -1,6 +1,5 @@
 html {
 
-  font-family: "Courier New", sans-serif;
   scroll-behavior: smooth;
   height: 100vh;
 
@@ -26,6 +25,7 @@ html {
         /* Fondue au noir sur les boutons du menu */
         a {
         text-decoration: none;
+        font-family: "Courier New", sans-serif;
         color: black;
         margin: 1pc 1pc;
         -webkit-transform: perspective(1px) translateZ(0);
@@ -72,6 +72,9 @@ html {
         left: 30%;
         top: 10%;
         position: absolute;
+        font-family: "Courier New", sans-serif;
+        text-decoration: none;
+        color: black;
       }
     }
 
@@ -79,18 +82,46 @@ html {
     section:nth-of-type(2) {
 
       height: 100vh;
+      padding-top: 20vh;
+      padding-bottom: 20vh;
+      padding-left: 5%;
+      padding-right: 5%;
 
       div{
-        height: 75%;
-        padding: 5%;
+        //float:left;
+        height: 60vh;
+        //padding-top: 5vh;
+        //padding-bottom: 5vh;
+        padding-left: 5%;
+        padding-right: 5%;
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "projet1 projet2 projet3 . projet4 projet5 . . projet8"
-        "projet9 projet10 . projet13 projet14 . . projet16 ."
-        ". projet11 . . . projet6 projet7 . ."
-        ". . projet12 . projet15 . . . .";
+
+        @media screen and (min-width: 1300px) {
+
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+
+          grid-template-areas: 
+          "projet1 projet2 projet3"
+          "projet4 projet5 projet6"
+          "projet7 projet8 projet9"
+          "projet10 projet11 projet12"
+          "projet13 projet14 projet15"
+          ". projet16 .";          
+        }
+
+        @media screen and (min-width: 1300px) {
+
+          grid-template-columns: repeat(9, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+
+          grid-template-areas: 
+          "projet1 projet2 projet3 . projet4 projet5 . . projet8"
+          "projet9 projet10 . projet13 projet14 . . projet16 ."
+          ". projet11 . . . projet6 projet7 . ."
+          ". . projet12 . projet15 . . . .";
+          
+        }
 
         @for $i from 1 through 16 { 
           area:nth-child(#{$i}) {
@@ -99,7 +130,10 @@ html {
               background-size: contain;
               //background-size: inherit;
               background-position: center center;
-              border-radius: 2em;
+              border-radius: 1em;
+              //padding: 1em;
+              height: 8pc;
+              width: 8pc;
               
               -webkit-transform: perspective(1px) translateZ(0);
               transform: perspective(1px) translateZ(0);
@@ -120,35 +154,45 @@ html {
 
     /* Troisième section */
     section:nth-of-type(3) {
-      height: 100vh;
+      //display: none;
+      height: fit-content;
       width: 50vw;
       margin: 5vh 25vw;
+      font-family: "Courier New", sans-serif;
+      box-shadow: 10px 10px 10px 10px #888888;
 
-      div {
-        height: 90%;
+      #navigation {
+        padding: 1pc 50%;
+        text-decoration: none;
+        width: 50%;
+      }
 
-        div:nth-of-type(1) {
-          background-color: rgb(124, 119, 120);
-          height: 75%;
-        }
+      #texte {
+        padding: 1em;
+      }
 
-        div:nth-of-type(2) {
-          background-color: lightblue;
-          height: 25%;
-        }
+      .carousel-indicators {
+        bottom: 0;
       }
     }
 
     /* Quatrième section */
     section:nth-of-type(4) {
+      //display: none;
+      height: 100vh;
+    }
+    /* Cinquième section */
+    section:nth-of-type(5) {
 
       height: 100vh;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
       
       div{
 
         vertical-align: middle;
         text-align: center;
-        padding: 3em;
+        height: fit-content;
 
         div:nth-of-type(1) {
           background: url(img/mosaique/carreJaune.png) no-repeat;
@@ -172,6 +216,7 @@ html {
           a {
             text-decoration: none;
             color: black;
+            font-family: "Courier New", sans-serif;
           }
         
           a:nth-child(5){

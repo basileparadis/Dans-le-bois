@@ -1,6 +1,5 @@
 @charset "UTF-8";
 html {
-  font-family: "Courier New", sans-serif;
   scroll-behavior: smooth;
   height: 100vh;
 }
@@ -11,6 +10,7 @@ html body {
   /* Deuxième section */
   /* Troisième section */
   /* Quatrième section */
+  /* Cinquième section */
 }
 
 html body section:nth-of-type(1) {
@@ -33,6 +33,7 @@ html body section:nth-of-type(1) div {
 
 html body section:nth-of-type(1) div a {
   text-decoration: none;
+  font-family: "Courier New", sans-serif;
   color: black;
   margin: 1pc 1pc;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -84,32 +85,55 @@ html body section:nth-of-type(1) #depuis {
   left: 30%;
   top: 10%;
   position: absolute;
+  font-family: "Courier New", sans-serif;
+  text-decoration: none;
+  color: black;
 }
 
 html body section:nth-of-type(2) {
   height: 100vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 html body section:nth-of-type(2) div {
-  height: 75%;
-  padding: 5%;
+  height: 60vh;
+  padding-left: 5%;
+  padding-right: 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[9];
-      grid-template-columns: repeat(9, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: "projet1 projet2 projet3 . projet4 projet5 . . projet8" "projet9 projet10 . projet13 projet14 . . projet16 ." ". projet11 . . . projet6 projet7 . ." ". . projet12 . projet15 . . . .";
+}
+
+@media screen and (min-width: 1300px) {
+  html body section:nth-of-type(2) div {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "projet1 projet2 projet3" "projet4 projet5 projet6" "projet7 projet8 projet9" "projet10 projet11 projet12" "projet13 projet14 projet15" ". projet16 .";
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  html body section:nth-of-type(2) div {
+    -ms-grid-columns: (1fr)[9];
+        grid-template-columns: repeat(9, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "projet1 projet2 projet3 . projet4 projet5 . . projet8" "projet9 projet10 . projet13 projet14 . . projet16 ." ". projet11 . . . projet6 projet7 . ." ". . projet12 . projet15 . . . .";
+  }
 }
 
 html body section:nth-of-type(2) div area:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: projet1;
   background: url(img/mosaique/1.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -129,13 +153,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: projet2;
   background: url(img/mosaique/2.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -155,13 +179,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: projet3;
   background: url(img/mosaique/3.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -181,13 +205,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
   grid-area: projet4;
   background: url(img/mosaique/4.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -207,13 +231,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 6;
   grid-area: projet5;
   background: url(img/mosaique/5.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -233,13 +257,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 6;
   grid-area: projet6;
   background: url(img/mosaique/6.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -259,13 +283,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
   grid-area: projet7;
   background: url(img/mosaique/7.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -285,13 +309,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(8) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 9;
   grid-area: projet8;
   background: url(img/mosaique/8.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -311,13 +335,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(9) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: projet9;
   background: url(img/mosaique/9.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -337,13 +361,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(10) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: projet10;
   background: url(img/mosaique/10.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -363,13 +387,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(11) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: projet11;
   background: url(img/mosaique/11.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -389,13 +413,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(12) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
   grid-area: projet12;
   background: url(img/mosaique/12.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -415,13 +439,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(13) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
   grid-area: projet13;
   background: url(img/mosaique/13.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -441,13 +465,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(14) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
   grid-area: projet14;
   background: url(img/mosaique/14.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -467,13 +491,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(15) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 5;
   grid-area: projet15;
   background: url(img/mosaique/15.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -493,13 +517,13 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(2) div area:nth-child(16) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 8;
   grid-area: projet16;
   background: url(img/mosaique/16.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  border-radius: 2em;
+  border-radius: 1em;
+  height: 8pc;
+  width: 8pc;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -519,43 +543,56 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(3) {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 50vw;
   margin: 5vh 25vw;
+  font-family: "Courier New", sans-serif;
+  -webkit-box-shadow: 10px 10px 10px 10px #888888;
+          box-shadow: 10px 10px 10px 10px #888888;
 }
 
-html body section:nth-of-type(3) div {
-  height: 90%;
+html body section:nth-of-type(3) #navigation {
+  padding: 1pc 50%;
+  text-decoration: none;
+  width: 50%;
 }
 
-html body section:nth-of-type(3) div div:nth-of-type(1) {
-  background-color: #7c7778;
-  height: 75%;
+html body section:nth-of-type(3) #texte {
+  padding: 1em;
 }
 
-html body section:nth-of-type(3) div div:nth-of-type(2) {
-  background-color: lightblue;
-  height: 25%;
+html body section:nth-of-type(3) .carousel-indicators {
+  bottom: 0;
 }
 
 html body section:nth-of-type(4) {
   height: 100vh;
 }
 
-html body section:nth-of-type(4) div {
-  vertical-align: middle;
-  text-align: center;
-  padding: 3em;
+html body section:nth-of-type(5) {
+  height: 100vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(1) {
+html body section:nth-of-type(5) div {
+  vertical-align: middle;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+html body section:nth-of-type(5) div div:nth-of-type(1) {
   background: url(img/mosaique/carreJaune.png) no-repeat;
   height: 9pc;
   width: 9pc;
   display: inline-block;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(2) {
+html body section:nth-of-type(5) div div:nth-of-type(2) {
   display: inline-block;
   text-align: initial;
   height: -webkit-fit-content;
@@ -563,39 +600,40 @@ html body section:nth-of-type(4) div div:nth-of-type(2) {
   height: fit-content;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(2) :nth-child(2) {
+html body section:nth-of-type(5) div div:nth-of-type(2) :nth-child(2) {
   margin: 1.5pc auto;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(2) p a span {
+html body section:nth-of-type(5) div div:nth-of-type(2) p a span {
   font-size: 1.5em;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(2) a {
+html body section:nth-of-type(5) div div:nth-of-type(2) a {
   text-decoration: none;
   color: black;
+  font-family: "Courier New", sans-serif;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(2) a:nth-child(5) {
+html body section:nth-of-type(5) div div:nth-of-type(2) a:nth-child(5) {
   background: url(img/ig2.svg) no-repeat;
   color: #e5e5e5;
   font-size: 45px;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(2) a:nth-child(6) {
+html body section:nth-of-type(5) div div:nth-of-type(2) a:nth-child(6) {
   background: url(img/fb2.svg) no-repeat;
   color: #e5e5e5;
   font-size: 45px;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(3) {
+html body section:nth-of-type(5) div div:nth-of-type(3) {
   display: inline-block;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(3) ul {
+html body section:nth-of-type(5) div div:nth-of-type(3) ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -606,21 +644,21 @@ html body section:nth-of-type(4) div div:nth-of-type(3) ul {
       grid-template-areas: ". . carreblanc" ". carrenoir1 ." "carrenoir2 . .";
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(3) ul li:nth-child(3) {
+html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(3) {
   background: url(img/mosaique/carreBlanc.png) no-repeat;
   grid-area: "carreblanc";
   background-size: contain;
   background-position: center center;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(3) ul li:nth-child(5) {
+html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
   background: url(img/mosaique/carreNoir.png) no-repeat;
   grid-area: "carrenoir1";
   background-size: contain;
   background-position: center center;
 }
 
-html body section:nth-of-type(4) div div:nth-of-type(3) ul li:nth-child(7) {
+html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
   background: url(img/mosaique/carreNoir.png) no-repeat;
   grid-area: "carrenoir2";
   background-size: contain;
