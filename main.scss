@@ -2,6 +2,8 @@ html {
 
   scroll-behavior: smooth;
   height: 100vh;
+  $minw: 1155px;
+  $minh: 736px;
 
   body {
       background-color: #e5e5e5;
@@ -16,6 +18,16 @@ html {
           top: 10%;
           left: 5%;
           position: absolute;
+      }
+
+      #depuis {
+        font-size: 75%;
+        left: 30%;
+        top: 10%;
+        position: absolute;
+        font-family: "Courier New", sans-serif;
+        text-decoration: none;
+        color: black;
       }
 
       div {
@@ -66,75 +78,26 @@ html {
         transform: scaleX(1);
         }
       }
-
-      #depuis {
-        font-size: 68%;
-        left: 30%;
-        top: 10%;
-        position: absolute;
-        font-family: "Courier New", sans-serif;
-        text-decoration: none;
-        color: black;
-      }
     }
 
     /* Deuxième section */
     section:nth-of-type(2) {
 
       height: 100vh;
-      padding-top: 20vh;
-      padding-bottom: 20vh;
-      padding-left: 5%;
-      padding-right: 5%;
 
       div{
-        //float:left;
-        height: 60vh;
-        //padding-top: 5vh;
-        //padding-bottom: 5vh;
-        padding-left: 5%;
-        padding-right: 5%;
+        height: fit-content;
+        width: fit-content;
+        text-align: center;
         display: grid;
-
-        @media screen and (min-width: 1300px) {
-
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(6, 1fr);
-
-          grid-template-areas: 
-          "projet1 projet2 projet3"
-          "projet4 projet5 projet6"
-          "projet7 projet8 projet9"
-          "projet10 projet11 projet12"
-          "projet13 projet14 projet15"
-          ". projet16 .";          
-        }
-
-        @media screen and (min-width: 1300px) {
-
-          grid-template-columns: repeat(9, 1fr);
-          grid-template-rows: repeat(4, 1fr);
-
-          grid-template-areas: 
-          "projet1 projet2 projet3 . projet4 projet5 . . projet8"
-          "projet9 projet10 . projet13 projet14 . . projet16 ."
-          ". projet11 . . . projet6 projet7 . ."
-          ". . projet12 . projet15 . . . .";
-          
-        }
 
         @for $i from 1 through 16 { 
           area:nth-child(#{$i}) {
               grid-area: projet#{$i};
               background: url(img/mosaique/#{$i}.png) no-repeat;
               background-size: contain;
-              //background-size: inherit;
               background-position: center center;
-              border-radius: 1em;
-              //padding: 1em;
-              height: 8pc;
-              width: 8pc;
-              
+              border-radius: 1em;              
               -webkit-transform: perspective(1px) translateZ(0);
               transform: perspective(1px) translateZ(0);
               box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -145,8 +108,105 @@ html {
           }
 
           area:hover, area:focus, area:active {
-              -webkit-transform: scale(1.3);
-              transform: scale(1.3);
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+          }
+        }
+
+        @media screen and (max-width: $minw)
+        {
+          margin: 10% auto;
+          height: fit-content;
+          width: fit-content;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(8, 1fr);
+          grid-template-areas: 
+          ". projet1 ."
+          "projet2 . projet3"
+          ". projet4 ."
+          "projet5 . projet6"
+          ". projet7 ."
+          "projet8 . projet9"
+          ". projet10 ."
+          "projet11 . projet12"
+          ". projet13 ."
+          "projet14 . projet15"
+          ". projet16 .";
+
+          @for $i from 1 through 16 { 
+            area:nth-child(#{$i}) {
+              height: 4em;
+              width: 4em;
+            }
+          }
+        }
+
+        @media screen and (min-width: $minw)
+        {
+          margin: 10% auto;
+          grid-template-columns: repeat(9, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-template-areas: 
+          "projet1 projet2 projet3 . projet4 projet5 . . projet8"
+          "projet9 projet10 . projet13 projet14 . . projet16 ."
+          ". projet11 . . . projet6 projet7 . ."
+          ". . projet12 . projet15 . . . .";
+
+          @for $i from 1 through 16 { 
+            area:nth-child(#{$i}) {
+                height: 8pc;
+                width: 8pc;
+            }
+          }
+        }
+
+        @media screen and (max-height: $minh)
+        {
+          height: fit-content;
+          width: fit-content;
+          margin: 0% auto;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(8, 1fr);
+          grid-template-areas: 
+          ". projet1 ."
+          "projet2 . projet3"
+          ". projet4 ."
+          "projet5 . projet6"
+          ". projet7 ."
+          "projet8 . projet9"
+          ". projet10 ."
+          "projet11 . projet12"
+          ". projet13 ."
+          "projet14 . projet15"
+          ". projet16 .";
+
+          @for $i from 1 through 16 { 
+            area:nth-child(#{$i}) {
+              height: 3.5em;
+              width: 3.5em;
+            }
+          }
+        }
+
+        @media screen and (max-height: 609px)
+        {
+          height: fit-content;
+          width: fit-content;
+          margin: 50% auto;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-template-areas: 
+          "projet1 projet2 projet3 projet4"
+          "projet5 projet6 projet7 projet8"
+          "projet9 projet10 projet11 projet12"
+          "projet13 projet14 projet15 projet16";
+
+          @for $i from 1 through 16 { 
+            area:nth-child(#{$i}) {
+              height: 3.5em;
+              width: 3.5em;
+              margin: 1em;
+            }
           }
         }
       }
@@ -154,21 +214,43 @@ html {
 
     /* Troisième section */
     section:nth-of-type(3) {
-      //display: none;
-      height: fit-content;
-      width: 50vw;
-      margin: 5vh 25vw;
-      font-family: "Courier New", sans-serif;
-      box-shadow: 10px 10px 10px 10px #888888;
 
-      #navigation {
-        padding: 1pc 50%;
-        text-decoration: none;
-        width: 50%;
+      height: fit-content;
+      font-family: "Courier New", sans-serif;
+
+      div {
+        text-align: center;
+        .glyphicon-chevron-up {
+          padding: 1%;
+          font-size:25px;
+          color: #fff;
+          border-width:12px;
+          border-color: black;
+          text-decoration: none;
+        }
+
+        .carousel-inner {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      @media screen and (min-width: $minw) {
+        width: 50vw;
+        margin: 5% auto;
+        box-shadow: 10px 10px 10px 10px #888888;
+      }
+
+      @media screen and (max-width: $minw) {
+        width: 85%;
+        margin: 1% auto;
+        box-shadow: 5px 5px 5px 5px #888888;
       }
 
       #texte {
         padding: 1em;
+        height: fit-content;
       }
 
       .carousel-indicators {
@@ -185,26 +267,30 @@ html {
     section:nth-of-type(5) {
 
       height: 100vh;
-      padding-top: 10vh;
-      padding-bottom: 10vh;
+      margin: 15% auto;
+      //padding-top: 10vh;
+      //padding-bottom: 10vh;
       
       div{
 
         vertical-align: middle;
         text-align: center;
-        height: fit-content;
+        padding: 3%;
 
         div:nth-of-type(1) {
           background: url(img/mosaique/carreJaune.png) no-repeat;
-          height:9pc;
-          width: 9pc;
-          display: inline-block;
+          background-size: contain;
+          background-position: center center;
+          width: 5pc;
+          height: 5pc;
         }
 
         div:nth-of-type(2) {
 
-          display: inline-block;
+          float: left;
+
           text-align: initial;
+          float: left;
           height: fit-content;
 
           :nth-child(2) {
@@ -253,6 +339,8 @@ html {
               grid-area: "carreblanc";
               background-size: contain;
               background-position: center center;
+              width: 4pc;
+              height: 4pc;
             }
 
             li:nth-child(5) {
@@ -260,6 +348,8 @@ html {
               grid-area: "carrenoir1";
               background-size: contain;
               background-position: center center;
+              width: 4pc;
+              height: 4pc;
             }
 
             li:nth-child(7) {
@@ -267,98 +357,134 @@ html {
               grid-area: "carrenoir2";
               background-size: contain;
               background-position: center center;
-              width: 8pc;
-              height: 8pc;
+              width: 4pc;
+              height: 4pc;
             }
           }
         }
       }
     }
   }
-  
-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  padding-bottom: 1pc;
 
-  area {
-    color: #e5e5e5;
-    width: 2em;
-    height: 2em;
+  @media screen and (max-width: $minw) {
 
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  
-  area:nth-of-type(1) {
-      background: url(img/ig.svg) no-repeat;
-  }
 
-  area:nth-of-type(2) {
-      background: url(img/fb.svg) no-repeat;
-  }
+    footer {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      padding: 1pc;
+      vertical-align: middle;
 
-  :hover, :focus, :active {
-      -webkit-transform: scale(1.3) translateZ(0);
-      transform: scale(1.3) translateZ(0);
-  }
 
-  @keyframes hvr-buzz-out {
-      10% {
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
+      #navigation-up {
+        color: #e5e5e5;
+        text-decoration: none;
+        width: 2em;
+        height: 2em;
+        float: left;
+        vertical-align: middle;
+        background:url(./img/mosaique/carreGris.svg);
+        background-size: contain;
+        opacity: 0.5;
+        div{
+          padding: 25%;
+        }
       }
-      20% {
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
+
+      #navigation-down {
+        color: #e5e5e5;
+        text-decoration: none;
+        width: 2em;
+        height: 2em;
+        float: right;
+        vertical-align: middle;
+        background:url(./img/mosaique/carreGris.svg);
+        background-size: contain;
+        opacity: 0.5;
+        div{
+          padding: 25%;
+        }
       }
-      30% {
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
+
+      area {
+        color: #e5e5e5;
+        width: 2em;
+        height: 2em;
+
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
       }
-      40% {
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
+      
+      area:nth-of-type(1) {
+          background: url(img/ig.svg) no-repeat;
       }
-      50% {
-        -webkit-transform: translateX(2px) rotate(1deg);
-        transform: translateX(2px) rotate(1deg);
+
+      area:nth-of-type(2) {
+          background: url(img/fb.svg) no-repeat;
       }
-      60% {
-        -webkit-transform: translateX(-2px) rotate(-1deg);
-        transform: translateX(-2px) rotate(-1deg);
+
+      a:focus, A:focus, area:focus, a:active, area:active {
+          -webkit-transform: scale(1.3) translateZ(0);
+          transform: scale(1.3) translateZ(0);
       }
-      70% {
-        -webkit-transform: translateX(2px) rotate(1deg);
-        transform: translateX(2px) rotate(1deg);
-      }
-      80% {
-        -webkit-transform: translateX(-2px) rotate(-1deg);
-        transform: translateX(-2px) rotate(-1deg);
-      }
-      90% {
-        -webkit-transform: translateX(1px) rotate(0);
-        transform: translateX(1px) rotate(0);
-      }
-      100% {
-        -webkit-transform: translateX(-1px) rotate(0);
-        transform: translateX(-1px) rotate(0);
+
+      @keyframes hvr-buzz-out {
+          10% {
+            -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg);
+          }
+          20% {
+            -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg);
+          }
+          30% {
+            -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg);
+          }
+          40% {
+            -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg);
+          }
+          50% {
+            -webkit-transform: translateX(2px) rotate(1deg);
+            transform: translateX(2px) rotate(1deg);
+          }
+          60% {
+            -webkit-transform: translateX(-2px) rotate(-1deg);
+            transform: translateX(-2px) rotate(-1deg);
+          }
+          70% {
+            -webkit-transform: translateX(2px) rotate(1deg);
+            transform: translateX(2px) rotate(1deg);
+          }
+          80% {
+            -webkit-transform: translateX(-2px) rotate(-1deg);
+            transform: translateX(-2px) rotate(-1deg);
+          }
+          90% {
+            -webkit-transform: translateX(1px) rotate(0);
+            transform: translateX(1px) rotate(0);
+          }
+          100% {
+            -webkit-transform: translateX(-1px) rotate(0);
+            transform: translateX(-1px) rotate(0);
+          }
+        }
       }
     }
-  }
 }
