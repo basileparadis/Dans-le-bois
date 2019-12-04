@@ -164,7 +164,7 @@ html {
         {
           height: fit-content;
           width: fit-content;
-          margin: 0% auto;
+          margin: 15% auto;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(8, 1fr);
           grid-template-areas: 
@@ -192,7 +192,7 @@ html {
         {
           height: fit-content;
           width: fit-content;
-          margin: 50% auto;
+          margin: 25% auto;
           grid-template-columns: repeat(4, 1fr);
           grid-template-rows: repeat(4, 1fr);
           grid-template-areas: 
@@ -262,42 +262,44 @@ html {
     section:nth-of-type(4) {
       //display: none;
       height: 100vh;
+
+      ul {
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+      }
     }
     /* Cinquième section */
     section:nth-of-type(5) {
 
-      height: 100vh;
-      margin: 15% auto;
-      //padding-top: 10vh;
-      //padding-bottom: 10vh;
-      
-      div{
+      $tailleCarre : 5pc;
+      margin-top: 50vh;
+      margin-bottom: 40vh;
 
-        vertical-align: middle;
+      div{
+        vertical-align: text-top;
         text-align: center;
-        padding: 3%;
+        height: fit-content;
 
         div:nth-of-type(1) {
           background: url(img/mosaique/carreJaune.png) no-repeat;
           background-size: contain;
           background-position: center center;
-          width: 5pc;
-          height: 5pc;
+          width: $tailleCarre;
+          height: $tailleCarre;
+          display: inline-block;
+          margin: auto 5%;
         }
 
         div:nth-of-type(2) {
 
-          float: left;
-
+          display: inline-block;
           text-align: initial;
-          float: left;
           height: fit-content;
+          margin: auto 5%;
 
-          :nth-child(2) {
-            margin: 1.5pc auto;
-          }
-
-          p a span { font-size:1.5em; }
+          p a span { font-size:2em; }
 
           a {
             text-decoration: none;
@@ -322,6 +324,7 @@ html {
 
           display: inline-block;
           height: fit-content;
+          margin: auto 5%;
 
           ul{
             display: grid;
@@ -339,8 +342,8 @@ html {
               grid-area: "carreblanc";
               background-size: contain;
               background-position: center center;
-              width: 4pc;
-              height: 4pc;
+              width: $tailleCarre;
+              height: $tailleCarre;
             }
 
             li:nth-child(5) {
@@ -348,8 +351,8 @@ html {
               grid-area: "carrenoir1";
               background-size: contain;
               background-position: center center;
-              width: 4pc;
-              height: 4pc;
+              width: $tailleCarre;
+              height: $tailleCarre;
             }
 
             li:nth-child(7) {
@@ -357,8 +360,8 @@ html {
               grid-area: "carrenoir2";
               background-size: contain;
               background-position: center center;
-              width: 4pc;
-              height: 4pc;
+              width: $tailleCarre;
+              height: $tailleCarre;
             }
           }
         }
@@ -366,8 +369,13 @@ html {
     }
   }
 
-  @media screen and (max-width: $minw) {
+  @media screen and (min-width: $minw) {
+    footer{
+      display: none;
+    }
+  }
 
+  @media screen and (max-width: $minw) {
 
     footer {
       position: fixed;
