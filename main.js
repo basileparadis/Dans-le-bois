@@ -1,6 +1,6 @@
 function doWithThisElement(element) {
 
-    console.log($("#imagesTravaux > .item").length);
+    document.getElementById('desc').innerHTML = "-- "+element.alt+" --";
 
     switch($("#imagesTravaux > .item").length)
     {
@@ -51,9 +51,7 @@ function doWithThisElement(element) {
             document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.alt+"/3.jpg' alt='DeuxiemeImage' id='image2'></img>";
             document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.alt+"/4.jpg' alt='TroisiemeImage' id='image3'></img>";
             document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.alt+"/5.jpg' alt='QuatriemeImage' id='image4'></img>";     
-            document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-            console.log(document.getElementById('image1').outerHTML);
-       
+            document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";       
             break;
         // Fender
         case '3':
@@ -82,7 +80,6 @@ function doWithThisElement(element) {
             document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.alt+"/3.jpg' alt='TroisiemeImage' id='image3'></img>";
             document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.alt+"/4.jpg' alt='QuatriemeImage' id='image4'></img>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";       
-            console.log(document.getElementById('image1').outerHTML);
             break;
         // LaBeteASeguin
         case '5':
@@ -219,64 +216,6 @@ function doWithThisElement(element) {
             document.getElementById('texte').innerHTML = "++ Réalisation : Guy Gagnon";
             break;
         default:
-            break;
-    }
-}
-
-function upPage(document) {
-
-    console.info(document.getAttribute("href"));
-
-    const numSection = document.getAttribute("href");
-
-    if(numSection<5)
-    {
-        numSection++;
-    }
-
-    switch(document.getAttribute("href"))
-    {
-        case "#":
-            document.getAttribute("href") = "#works"
-            break;
-        case "#works":
-            document.getAttribute("href") = "#focusWork"
-            break;
-        case "#focusWork":
-            document.getAttribute("href") = "#equipe"
-            break;
-        case "#equipe":
-            document.getAttribute("href") = "#contact"
-            break;
-        case "#contact":
-            document.getAttribute("href") = "#contact"
-            break;
-    }
-
-    console.info(document.getAttribute("href"));
-}
-
-function downPage(document) {
-
-    console.info(document.getAttribute("href"));
-
-    switch(document.getAttribute("href"))
-    {
-        case '#':
-            document.getAttribute("href") = "#"
-            console.info(document.getAttribute("href"));
-            break;
-        case '#works':
-            document.getAttribute("href") = "#"
-            break;
-        case "#focusWork":
-            document.getAttribute("href") = "#works"
-            break;
-        case "#equipe":
-            document.getAttribute("href") = "#focusWork"
-            break;
-        case "#contact":
-            document.getAttribute("href") = "#equipe"
             break;
     }
 }

@@ -217,16 +217,35 @@ html {
 
       height: fit-content;
       font-family: "Courier New", sans-serif;
+      width: 60vw;
+      margin: 1% auto;
+
+      >div {
+        padding-bottom: 4pc;
+        padding-top: 1pc;
+      }
 
       div {
         text-align: center;
-        .glyphicon-chevron-up {
-          padding: 1%;
-          font-size:25px;
-          color: #fff;
+        height: fit-content;
+
+        #desc {
+          position: absolute;
+          font-size:20px;
+          color: #e5e5e5;
           border-width:12px;
-          border-color: black;
+          background-color: black;
           text-decoration: none;
+          padding: initial;
+        }
+
+        .glyphicon-chevron-up {
+          font-size:25px;
+          //color: rgb(131, 147, 163);
+          color: black;
+          text-decoration: none;
+          float: right;
+          padding: initial;
         }
 
         .carousel-inner {
@@ -237,15 +256,18 @@ html {
       }
 
       @media screen and (min-width: $minw) {
-        width: 50vw;
-        margin: 5% auto;
-        box-shadow: 10px 10px 10px 10px #888888;
+        #fenetreProjet {
+          box-shadow: 5px 5px 8px #888888;
+        }
+
       }
 
       @media screen and (max-width: $minw) {
         width: 85%;
         margin: 1% auto;
-        box-shadow: 5px 5px 5px 5px #888888;
+        #fenetrePorjet {
+          box-shadow: 8px 8px 8px #888888;
+        }
       }
 
       #texte {
@@ -260,7 +282,7 @@ html {
 
     /* Quatrième section */
     section:nth-of-type(4) {
-      //display: none;
+
       height: 100vh;
 
       ul {

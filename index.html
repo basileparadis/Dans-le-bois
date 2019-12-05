@@ -25,28 +25,31 @@
         <a name="works"></a>
         <section>
             <div>
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="1" alt="PhilippeCouette">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="1" alt="Philippe Couette">
                 <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="2" alt="Elvis">
                 <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="3" alt="Fender">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="4" alt="StenslandGirard">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="5" alt="LaBeteASeguin">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="4" alt="Stensland Girard">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="5" alt="La Bête à Seguin">
                 <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="6" alt="Parrafine">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="7" alt="PurPak">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="7" alt="Pur Pak">
                 <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="8" alt="ByeBye">
                 <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="9" alt="Cerebrum">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="10" alt="Demo">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="11" alt="Gemeaux">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="12" alt="LMalediction">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="10" alt="démo">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="11" alt="Gala des Gémeaux 2018">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="12" alt="La malédiction de Jonathan Plourde">
                 <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="13" alt="Marika">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="14" alt="NitroRush">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="15" alt="PauseKahwa">
-                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="16" alt="QcCinema">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="14" alt="NITRO RUSH">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="15" alt="Pause Kahwa – Ouverture">
+                <area onclick="doWithThisElement(this)" class="projets" href="#focusWork" id="16" alt="Gala Québec Cinéma">
             </div>
         </section>
         <a name="focusWork"></a>    
-        <section id="fenetreProjets">
+        <section>
             <div>
-                <div><a href="#works" class="glyphicon glyphicon-chevron-up"></a></div>
+                <div id="desc">Philippe Couette</div>
+                <a href="#works" class="glyphicon glyphicon-chevron-up"></a>
+            </div>
+            <div id="fenetreProjets">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                     <!-- Indicators -->
                     <ol class="carousel-indicators" id="indicateurs">
@@ -59,16 +62,16 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" id="imagesTravaux">
                         <div class="item active" id="cadre1">
-                            <img src="./img/travaux/PhilippeCouette/2.jpg" alt="PremiereImage" id="image1">
+                            <img src="./img/travaux/Philippe Couette/2.jpg" alt="PremiereImage" id="image1">
                         </div>
                         <div class="item" id="cadre2">
-                            <img src="./img/travaux/PhilippeCouette/3.jpg" alt="DeuxiemeImage" id="image2">
+                            <img src="./img/travaux/Philippe Couette/3.jpg" alt="DeuxiemeImage" id="image2">
                         </div>
                         <div class="item" id="cadre3">
-                            <img src="./img/travaux/PhilippeCouette/4.jpg" alt="TroisiemeImage" id="image3">
+                            <img src="./img/travaux/Philippe Couette/4.jpg" alt="TroisiemeImage" id="image3">
                         </div>
                         <div class="item" id="cadre4">
-                            <img src="./img/travaux/PhilippeCouette/5.jpg" alt="QuatriemeImage" id="image4">
+                            <img src="./img/travaux/Philippe Couette/5.jpg" alt="QuatriemeImage" id="image4">
                         </div>
                     </div>
                     
@@ -132,11 +135,11 @@
             </div>
         </section>
         <footer>
-            <a id="navigation-up" href="#" onclick="upPage(this)">
-                <div class="glyphicon glyphicon-chevron-up"></div>
+            <a id="navigation-up" href="#">
+                <div class="glyphicon glyphicon-chevron-up prev-section"></div>
             </a>
-            <a id="navigation-down" href="#">
-                <div class="glyphicon glyphicon-chevron-down" onclick="downPage(this)"></div>
+            <a id="navigation-down" href="#contact">
+                <div class="glyphicon glyphicon-chevron-down next-section"></div>
             </a>
         </footer>
     </body>
