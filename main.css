@@ -35,8 +35,16 @@ html body section:nth-of-type(1) #depuis {
 }
 
 html body section:nth-of-type(1) div {
-  padding-top: 50vh;
-  padding-bottom: 50vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   /* Fondue au noir sur les boutons du menu */
 }
@@ -90,23 +98,28 @@ html body section:nth-of-type(1) div :hover:before, html body section:nth-of-typ
   transform: scaleX(1);
 }
 
-html body section:nth-of-type(2) {
+html body section:nth-of-type(2) div {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-html body section:nth-of-type(2) div {
+html body section:nth-of-type(2) div div {
+  display: -ms-grid;
+  display: grid;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
 }
 
-html body section:nth-of-type(2) div area:nth-child(1) {
+html body section:nth-of-type(2) div div span:nth-child(1) {
   grid-area: projet1;
   background: url(img/mosaique/1.png) no-repeat;
   background-size: contain;
@@ -125,12 +138,12 @@ html body section:nth-of-type(2) div area:nth-child(1) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(2) {
+html body section:nth-of-type(2) div div span:nth-child(2) {
   grid-area: projet2;
   background: url(img/mosaique/2.png) no-repeat;
   background-size: contain;
@@ -149,12 +162,12 @@ html body section:nth-of-type(2) div area:nth-child(2) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(3) {
+html body section:nth-of-type(2) div div span:nth-child(3) {
   grid-area: projet3;
   background: url(img/mosaique/3.png) no-repeat;
   background-size: contain;
@@ -173,12 +186,12 @@ html body section:nth-of-type(2) div area:nth-child(3) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(4) {
+html body section:nth-of-type(2) div div span:nth-child(4) {
   grid-area: projet4;
   background: url(img/mosaique/4.png) no-repeat;
   background-size: contain;
@@ -197,12 +210,12 @@ html body section:nth-of-type(2) div area:nth-child(4) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(5) {
+html body section:nth-of-type(2) div div span:nth-child(5) {
   grid-area: projet5;
   background: url(img/mosaique/5.png) no-repeat;
   background-size: contain;
@@ -221,12 +234,12 @@ html body section:nth-of-type(2) div area:nth-child(5) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(6) {
+html body section:nth-of-type(2) div div span:nth-child(6) {
   grid-area: projet6;
   background: url(img/mosaique/6.png) no-repeat;
   background-size: contain;
@@ -245,12 +258,12 @@ html body section:nth-of-type(2) div area:nth-child(6) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(7) {
+html body section:nth-of-type(2) div div span:nth-child(7) {
   grid-area: projet7;
   background: url(img/mosaique/7.png) no-repeat;
   background-size: contain;
@@ -269,12 +282,12 @@ html body section:nth-of-type(2) div area:nth-child(7) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(8) {
+html body section:nth-of-type(2) div div span:nth-child(8) {
   grid-area: projet8;
   background: url(img/mosaique/8.png) no-repeat;
   background-size: contain;
@@ -293,12 +306,12 @@ html body section:nth-of-type(2) div area:nth-child(8) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(9) {
+html body section:nth-of-type(2) div div span:nth-child(9) {
   grid-area: projet9;
   background: url(img/mosaique/9.png) no-repeat;
   background-size: contain;
@@ -317,12 +330,12 @@ html body section:nth-of-type(2) div area:nth-child(9) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(10) {
+html body section:nth-of-type(2) div div span:nth-child(10) {
   grid-area: projet10;
   background: url(img/mosaique/10.png) no-repeat;
   background-size: contain;
@@ -341,12 +354,12 @@ html body section:nth-of-type(2) div area:nth-child(10) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(11) {
+html body section:nth-of-type(2) div div span:nth-child(11) {
   grid-area: projet11;
   background: url(img/mosaique/11.png) no-repeat;
   background-size: contain;
@@ -365,12 +378,12 @@ html body section:nth-of-type(2) div area:nth-child(11) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(12) {
+html body section:nth-of-type(2) div div span:nth-child(12) {
   grid-area: projet12;
   background: url(img/mosaique/12.png) no-repeat;
   background-size: contain;
@@ -389,12 +402,12 @@ html body section:nth-of-type(2) div area:nth-child(12) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(13) {
+html body section:nth-of-type(2) div div span:nth-child(13) {
   grid-area: projet13;
   background: url(img/mosaique/13.png) no-repeat;
   background-size: contain;
@@ -413,12 +426,12 @@ html body section:nth-of-type(2) div area:nth-child(13) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(14) {
+html body section:nth-of-type(2) div div span:nth-child(14) {
   grid-area: projet14;
   background: url(img/mosaique/14.png) no-repeat;
   background-size: contain;
@@ -437,12 +450,12 @@ html body section:nth-of-type(2) div area:nth-child(14) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(15) {
+html body section:nth-of-type(2) div div span:nth-child(15) {
   grid-area: projet15;
   background: url(img/mosaique/15.png) no-repeat;
   background-size: contain;
@@ -461,12 +474,12 @@ html body section:nth-of-type(2) div area:nth-child(15) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-html body section:nth-of-type(2) div area:nth-child(16) {
+html body section:nth-of-type(2) div div span:nth-child(16) {
   grid-area: projet16;
   background: url(img/mosaique/16.png) no-repeat;
   background-size: contain;
@@ -485,14 +498,13 @@ html body section:nth-of-type(2) div area:nth-child(16) {
   transition-property: transform, -webkit-transform;
 }
 
-html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2) div area:focus, html body section:nth-of-type(2) div area:active {
+html body section:nth-of-type(2) div div span:hover, html body section:nth-of-type(2) div div span:focus, html body section:nth-of-type(2) div div span:active {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
 @media screen and (max-width: 1155px) {
-  html body section:nth-of-type(2) div {
-    margin: 10% auto;
+  html body section:nth-of-type(2) div div {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -505,230 +517,228 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas: ". projet1 ." "projet2 . projet3" ". projet4 ." "projet5 . projet6" ". projet7 ." "projet8 . projet9" ". projet10 ." "projet11 . projet12" ". projet13 ." "projet14 . projet15" ". projet16 .";
   }
-  html body section:nth-of-type(2) div area:nth-child(1) {
+  html body section:nth-of-type(2) div div span:nth-child(1) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(2) {
+  html body section:nth-of-type(2) div div span:nth-child(2) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(3) {
+  html body section:nth-of-type(2) div div span:nth-child(3) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(4) {
+  html body section:nth-of-type(2) div div span:nth-child(4) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(5) {
+  html body section:nth-of-type(2) div div span:nth-child(5) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(6) {
+  html body section:nth-of-type(2) div div span:nth-child(6) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(7) {
+  html body section:nth-of-type(2) div div span:nth-child(7) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(8) {
+  html body section:nth-of-type(2) div div span:nth-child(8) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(9) {
+  html body section:nth-of-type(2) div div span:nth-child(9) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(10) {
+  html body section:nth-of-type(2) div div span:nth-child(10) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(11) {
+  html body section:nth-of-type(2) div div span:nth-child(11) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(12) {
+  html body section:nth-of-type(2) div div span:nth-child(12) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(13) {
+  html body section:nth-of-type(2) div div span:nth-child(13) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(14) {
+  html body section:nth-of-type(2) div div span:nth-child(14) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(15) {
+  html body section:nth-of-type(2) div div span:nth-child(15) {
     height: 4em;
     width: 4em;
   }
-  html body section:nth-of-type(2) div area:nth-child(16) {
+  html body section:nth-of-type(2) div div span:nth-child(16) {
     height: 4em;
     width: 4em;
   }
 }
 
 @media screen and (min-width: 1155px) {
-  html body section:nth-of-type(2) div {
-    margin: 10% auto;
+  html body section:nth-of-type(2) div div {
     -ms-grid-columns: (1fr)[9];
         grid-template-columns: repeat(9, 1fr);
     -ms-grid-rows: (1fr)[4];
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas: "projet1 projet2 projet3 . projet4 projet5 . . projet8" "projet9 projet10 . projet13 projet14 . . projet16 ." ". projet11 . . . projet6 projet7 . ." ". . projet12 . projet15 . . . .";
   }
-  html body section:nth-of-type(2) div area:nth-child(1) {
+  html body section:nth-of-type(2) div div span:nth-child(1) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(2) {
+  html body section:nth-of-type(2) div div span:nth-child(2) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(3) {
+  html body section:nth-of-type(2) div div span:nth-child(3) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(4) {
+  html body section:nth-of-type(2) div div span:nth-child(4) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(5) {
+  html body section:nth-of-type(2) div div span:nth-child(5) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(6) {
+  html body section:nth-of-type(2) div div span:nth-child(6) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(7) {
+  html body section:nth-of-type(2) div div span:nth-child(7) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(8) {
+  html body section:nth-of-type(2) div div span:nth-child(8) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(9) {
+  html body section:nth-of-type(2) div div span:nth-child(9) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(10) {
+  html body section:nth-of-type(2) div div span:nth-child(10) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(11) {
+  html body section:nth-of-type(2) div div span:nth-child(11) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(12) {
+  html body section:nth-of-type(2) div div span:nth-child(12) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(13) {
+  html body section:nth-of-type(2) div div span:nth-child(13) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(14) {
+  html body section:nth-of-type(2) div div span:nth-child(14) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(15) {
+  html body section:nth-of-type(2) div div span:nth-child(15) {
     height: 8pc;
     width: 8pc;
   }
-  html body section:nth-of-type(2) div area:nth-child(16) {
+  html body section:nth-of-type(2) div div span:nth-child(16) {
     height: 8pc;
     width: 8pc;
   }
 }
 
 @media screen and (max-height: 736px) {
-  html body section:nth-of-type(2) div {
+  html body section:nth-of-type(2) div div {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 15% auto;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas: ". projet1 ." "projet2 . projet3" ". projet4 ." "projet5 . projet6" ". projet7 ." "projet8 . projet9" ". projet10 ." "projet11 . projet12" ". projet13 ." "projet14 . projet15" ". projet16 .";
   }
-  html body section:nth-of-type(2) div area:nth-child(1) {
+  html body section:nth-of-type(2) div div span:nth-child(1) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(2) {
+  html body section:nth-of-type(2) div div span:nth-child(2) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(3) {
+  html body section:nth-of-type(2) div div span:nth-child(3) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(4) {
+  html body section:nth-of-type(2) div div span:nth-child(4) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(5) {
+  html body section:nth-of-type(2) div div span:nth-child(5) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(6) {
+  html body section:nth-of-type(2) div div span:nth-child(6) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(7) {
+  html body section:nth-of-type(2) div div span:nth-child(7) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(8) {
+  html body section:nth-of-type(2) div div span:nth-child(8) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(9) {
+  html body section:nth-of-type(2) div div span:nth-child(9) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(10) {
+  html body section:nth-of-type(2) div div span:nth-child(10) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(11) {
+  html body section:nth-of-type(2) div div span:nth-child(11) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(12) {
+  html body section:nth-of-type(2) div div span:nth-child(12) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(13) {
+  html body section:nth-of-type(2) div div span:nth-child(13) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(14) {
+  html body section:nth-of-type(2) div div span:nth-child(14) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(15) {
+  html body section:nth-of-type(2) div div span:nth-child(15) {
     height: 3.5em;
     width: 3.5em;
   }
-  html body section:nth-of-type(2) div area:nth-child(16) {
+  html body section:nth-of-type(2) div div span:nth-child(16) {
     height: 3.5em;
     width: 3.5em;
   }
 }
 
 @media screen and (max-height: 609px) {
-  html body section:nth-of-type(2) div {
+  html body section:nth-of-type(2) div div {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -742,82 +752,82 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas: "projet1 projet2 projet3 projet4" "projet5 projet6 projet7 projet8" "projet9 projet10 projet11 projet12" "projet13 projet14 projet15 projet16";
   }
-  html body section:nth-of-type(2) div area:nth-child(1) {
+  html body section:nth-of-type(2) div div span:nth-child(1) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(2) {
+  html body section:nth-of-type(2) div div span:nth-child(2) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(3) {
+  html body section:nth-of-type(2) div div span:nth-child(3) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(4) {
+  html body section:nth-of-type(2) div div span:nth-child(4) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(5) {
+  html body section:nth-of-type(2) div div span:nth-child(5) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(6) {
+  html body section:nth-of-type(2) div div span:nth-child(6) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(7) {
+  html body section:nth-of-type(2) div div span:nth-child(7) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(8) {
+  html body section:nth-of-type(2) div div span:nth-child(8) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(9) {
+  html body section:nth-of-type(2) div div span:nth-child(9) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(10) {
+  html body section:nth-of-type(2) div div span:nth-child(10) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(11) {
+  html body section:nth-of-type(2) div div span:nth-child(11) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(12) {
+  html body section:nth-of-type(2) div div span:nth-child(12) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(13) {
+  html body section:nth-of-type(2) div div span:nth-child(13) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(14) {
+  html body section:nth-of-type(2) div div span:nth-child(14) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(15) {
+  html body section:nth-of-type(2) div div span:nth-child(15) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
   }
-  html body section:nth-of-type(2) div area:nth-child(16) {
+  html body section:nth-of-type(2) div div span:nth-child(16) {
     height: 3.5em;
     width: 3.5em;
     margin: 1em;
@@ -825,46 +835,68 @@ html body section:nth-of-type(2) div area:hover, html body section:nth-of-type(2
 }
 
 html body section:nth-of-type(3) {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   font-family: "Courier New", sans-serif;
-  width: 60vw;
-  margin: 1% auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-html body section:nth-of-type(3) > div {
-  padding-bottom: 4pc;
-  padding-top: 1pc;
+html body section:nth-of-type(3) > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 1pc;
 }
 
-html body section:nth-of-type(3) div {
-  text-align: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-html body section:nth-of-type(3) div #desc {
-  position: absolute;
+html body section:nth-of-type(3) > div > div #desc {
   font-size: 20px;
   color: #e5e5e5;
-  border-width: 12px;
   background-color: black;
   text-decoration: none;
-  padding: initial;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-html body section:nth-of-type(3) div .glyphicon-chevron-up {
+html body section:nth-of-type(3) > div > div .glyphicon-chevron-up {
   font-size: 25px;
   color: black;
   text-decoration: none;
-  float: right;
-  padding: initial;
 }
 
-html body section:nth-of-type(3) div .carousel-inner img {
-  width: 100%;
+html body section:nth-of-type(3) > div img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media screen and (min-width: 1155px) {
@@ -877,7 +909,7 @@ html body section:nth-of-type(3) div .carousel-inner img {
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(3) {
     width: 85%;
-    margin: 1% auto;
+    margin: 25% auto;
   }
   html body section:nth-of-type(3) #fenetrePorjet {
     -webkit-box-shadow: 8px 8px 8px #888888;
@@ -908,9 +940,57 @@ html body section:nth-of-type(4) ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  font-size: 0;
+}
+
+html body section:nth-of-type(4) ul li:nth-of-type(1) div:nth-of-type(1) {
+  background: url(./img/equipe/geoffroy.png);
+  height: 9pc;
+  width: 9pc;
+}
+
+html body section:nth-of-type(4) ul li:nth-of-type(2) div:nth-of-type(1) {
+  background: url(./img/equipe/maxime.png);
+  height: 9pc;
+  width: 9pc;
+}
+
+html body section:nth-of-type(4) ul li:nth-of-type(3) div:nth-of-type(1) {
+  background: url(./img/equipe/denis.png);
+  height: 9pc;
+  width: 9pc;
+}
+
+html body section:nth-of-type(4) ul span {
+  display: inline-block;
+  height: 2pc;
+  width: 2pc;
+  opacity: 0.5;
+}
+
+html body section:nth-of-type(4) ul a:nth-of-type(1) span {
+  background: url(img/ig.svg) no-repeat;
+}
+
+html body section:nth-of-type(4) ul a:nth-of-type(2) span {
+  background: url(img/fb.svg) no-repeat;
+}
+
+html body section:nth-of-type(4) ul div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+html body section:nth-of-type(4) ul :hover {
+  opacity: 1;
 }
 
 html body section:nth-of-type(5) {
@@ -1013,166 +1093,81 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
   height: 5pc;
 }
 
-@media screen and (min-width: 1155px) {
-  html footer {
-    display: none;
-  }
+html footer {
+  display: none;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 1pc;
+  background-color: #e5e5e5;
 }
 
-@media screen and (max-width: 1155px) {
-  html footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    padding: 1pc;
-    vertical-align: middle;
-  }
-  html footer #navigation-up {
-    color: #e5e5e5;
-    text-decoration: none;
-    width: 2em;
-    height: 2em;
-    float: left;
-    vertical-align: middle;
-    background: url(./img/mosaique/carreGris.svg);
-    background-size: contain;
-    opacity: 0.5;
-  }
-  html footer #navigation-up div {
-    padding: 25%;
-  }
-  html footer #navigation-down {
-    color: #e5e5e5;
-    text-decoration: none;
-    width: 2em;
-    height: 2em;
-    float: right;
-    vertical-align: middle;
-    background: url(./img/mosaique/carreGris.svg);
-    background-size: contain;
-    opacity: 0.5;
-  }
-  html footer #navigation-down div {
-    padding: 25%;
-  }
-  html footer area {
-    color: #e5e5e5;
-    width: 2em;
-    height: 2em;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  html footer area:nth-of-type(1) {
-    background: url(img/ig.svg) no-repeat;
-  }
-  html footer area:nth-of-type(2) {
-    background: url(img/fb.svg) no-repeat;
-  }
-  html footer a:focus, html footer A:focus, html footer area:focus, html footer a:active, html footer area:active {
-    -webkit-transform: scale(1.3) translateZ(0);
-    transform: scale(1.3) translateZ(0);
-  }
-  @-webkit-keyframes hvr-buzz-out {
-    10% {
-      -webkit-transform: translateX(3px) rotate(2deg);
-      transform: translateX(3px) rotate(2deg);
-    }
-    20% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
-      transform: translateX(-3px) rotate(-2deg);
-    }
-    30% {
-      -webkit-transform: translateX(3px) rotate(2deg);
-      transform: translateX(3px) rotate(2deg);
-    }
-    40% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
-      transform: translateX(-3px) rotate(-2deg);
-    }
-    50% {
-      -webkit-transform: translateX(2px) rotate(1deg);
-      transform: translateX(2px) rotate(1deg);
-    }
-    60% {
-      -webkit-transform: translateX(-2px) rotate(-1deg);
-      transform: translateX(-2px) rotate(-1deg);
-    }
-    70% {
-      -webkit-transform: translateX(2px) rotate(1deg);
-      transform: translateX(2px) rotate(1deg);
-    }
-    80% {
-      -webkit-transform: translateX(-2px) rotate(-1deg);
-      transform: translateX(-2px) rotate(-1deg);
-    }
-    90% {
-      -webkit-transform: translateX(1px) rotate(0);
-      transform: translateX(1px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateX(-1px) rotate(0);
-      transform: translateX(-1px) rotate(0);
-    }
-  }
-  @keyframes hvr-buzz-out {
-    10% {
-      -webkit-transform: translateX(3px) rotate(2deg);
-      transform: translateX(3px) rotate(2deg);
-    }
-    20% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
-      transform: translateX(-3px) rotate(-2deg);
-    }
-    30% {
-      -webkit-transform: translateX(3px) rotate(2deg);
-      transform: translateX(3px) rotate(2deg);
-    }
-    40% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
-      transform: translateX(-3px) rotate(-2deg);
-    }
-    50% {
-      -webkit-transform: translateX(2px) rotate(1deg);
-      transform: translateX(2px) rotate(1deg);
-    }
-    60% {
-      -webkit-transform: translateX(-2px) rotate(-1deg);
-      transform: translateX(-2px) rotate(-1deg);
-    }
-    70% {
-      -webkit-transform: translateX(2px) rotate(1deg);
-      transform: translateX(2px) rotate(1deg);
-    }
-    80% {
-      -webkit-transform: translateX(-2px) rotate(-1deg);
-      transform: translateX(-2px) rotate(-1deg);
-    }
-    90% {
-      -webkit-transform: translateX(1px) rotate(0);
-      transform: translateX(1px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateX(-1px) rotate(0);
-      transform: translateX(-1px) rotate(0);
-    }
-  }
+html footer a {
+  text-decoration: none;
+  font-family: "Courier New", sans-serif;
+  color: black;
+  margin: 1pc 1pc;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+html footer a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+html footer a:hover, html footer a:focus, html footer a:active {
+  color: #939598;
+}
+
+html footer a:hover:before, html footer a:focus:before, html footer a:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+html .carreGrow {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+html .carreGrow:hover, html .carreGrow:focus, html .carreGrow:active {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 /*# sourceMappingURL=main.css.map */

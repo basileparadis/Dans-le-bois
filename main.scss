@@ -6,7 +6,8 @@ html {
   $minh: 736px;
 
   body {
-      background-color: #e5e5e5;
+
+    background-color: #e5e5e5;
 
     /* Première section */
     section:nth-of-type(1) {
@@ -31,8 +32,11 @@ html {
       }
 
       div {
-        padding-top: 50vh;
-        padding-bottom: 50vh;
+        height:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
         text-align: center;
         /* Fondue au noir sur les boutons du menu */
         a {
@@ -83,129 +87,130 @@ html {
     /* Deuxième section */
     section:nth-of-type(2) {
 
-      height: 100vh;
+      div {
 
-      div{
-        height: fit-content;
-        width: fit-content;
-        text-align: center;
-        display: grid;
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
 
-        @for $i from 1 through 16 { 
-          area:nth-child(#{$i}) {
-              grid-area: projet#{$i};
-              background: url(img/mosaique/#{$i}.png) no-repeat;
-              background-size: contain;
-              background-position: center center;
-              border-radius: 1em;              
-              -webkit-transform: perspective(1px) translateZ(0);
-              transform: perspective(1px) translateZ(0);
-              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-              -webkit-transition-duration: 0.3s;
-              transition-duration: 0.3s;
-              -webkit-transition-property: transform;
-              transition-property: transform;
-          }
-
-          area:hover, area:focus, area:active {
-            -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-          }
-        }
-
-        @media screen and (max-width: $minw)
-        {
-          margin: 10% auto;
+        div{
+          display: grid;
           height: fit-content;
-          width: fit-content;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(8, 1fr);
-          grid-template-areas: 
-          ". projet1 ."
-          "projet2 . projet3"
-          ". projet4 ."
-          "projet5 . projet6"
-          ". projet7 ."
-          "projet8 . projet9"
-          ". projet10 ."
-          "projet11 . projet12"
-          ". projet13 ."
-          "projet14 . projet15"
-          ". projet16 .";
 
           @for $i from 1 through 16 { 
-            area:nth-child(#{$i}) {
-              height: 4em;
-              width: 4em;
+            span:nth-child(#{$i}) {
+                grid-area: projet#{$i};
+                background: url(img/mosaique/#{$i}.png) no-repeat;
+                background-size: contain;
+                background-position: center center;
+                border-radius: 1em;              
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+            }
+
+            span:hover, span:focus, span:active {
+              -webkit-transform: scale(1.3);
+              transform: scale(1.3);
             }
           }
-        }
 
-        @media screen and (min-width: $minw)
-        {
-          margin: 10% auto;
-          grid-template-columns: repeat(9, 1fr);
-          grid-template-rows: repeat(4, 1fr);
-          grid-template-areas: 
-          "projet1 projet2 projet3 . projet4 projet5 . . projet8"
-          "projet9 projet10 . projet13 projet14 . . projet16 ."
-          ". projet11 . . . projet6 projet7 . ."
-          ". . projet12 . projet15 . . . .";
+          @media screen and (max-width: $minw)
+          {
+            height: fit-content;
+            width: fit-content;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas: 
+            ". projet1 ."
+            "projet2 . projet3"
+            ". projet4 ."
+            "projet5 . projet6"
+            ". projet7 ."
+            "projet8 . projet9"
+            ". projet10 ."
+            "projet11 . projet12"
+            ". projet13 ."
+            "projet14 . projet15"
+            ". projet16 .";
 
-          @for $i from 1 through 16 { 
-            area:nth-child(#{$i}) {
-                height: 8pc;
-                width: 8pc;
+            @for $i from 1 through 16 { 
+              span:nth-child(#{$i}) {
+                height: 4em;
+                width: 4em;
+              }
             }
           }
-        }
 
-        @media screen and (max-height: $minh)
-        {
-          height: fit-content;
-          width: fit-content;
-          margin: 15% auto;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(8, 1fr);
-          grid-template-areas: 
-          ". projet1 ."
-          "projet2 . projet3"
-          ". projet4 ."
-          "projet5 . projet6"
-          ". projet7 ."
-          "projet8 . projet9"
-          ". projet10 ."
-          "projet11 . projet12"
-          ". projet13 ."
-          "projet14 . projet15"
-          ". projet16 .";
+          @media screen and (min-width: $minw)
+          {
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "projet1 projet2 projet3 . projet4 projet5 . . projet8"
+            "projet9 projet10 . projet13 projet14 . . projet16 ."
+            ". projet11 . . . projet6 projet7 . ."
+            ". . projet12 . projet15 . . . .";
 
-          @for $i from 1 through 16 { 
-            area:nth-child(#{$i}) {
-              height: 3.5em;
-              width: 3.5em;
+            @for $i from 1 through 16 { 
+              span:nth-child(#{$i}) {
+                  height: 8pc;
+                  width: 8pc;
+              }
             }
           }
-        }
 
-        @media screen and (max-height: 609px)
-        {
-          height: fit-content;
-          width: fit-content;
-          margin: 25% auto;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(4, 1fr);
-          grid-template-areas: 
-          "projet1 projet2 projet3 projet4"
-          "projet5 projet6 projet7 projet8"
-          "projet9 projet10 projet11 projet12"
-          "projet13 projet14 projet15 projet16";
+          @media screen and (max-height: $minh)
+          {
+            height: fit-content;
+            width: fit-content;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas: 
+            ". projet1 ."
+            "projet2 . projet3"
+            ". projet4 ."
+            "projet5 . projet6"
+            ". projet7 ."
+            "projet8 . projet9"
+            ". projet10 ."
+            "projet11 . projet12"
+            ". projet13 ."
+            "projet14 . projet15"
+            ". projet16 .";
 
-          @for $i from 1 through 16 { 
-            area:nth-child(#{$i}) {
-              height: 3.5em;
-              width: 3.5em;
-              margin: 1em;
+            @for $i from 1 through 16 { 
+              span:nth-child(#{$i}) {
+                height: 3.5em;
+                width: 3.5em;
+              }
+            }
+          }
+
+          @media screen and (max-height: 609px)
+          {
+            height: fit-content;
+            width: fit-content;
+            margin: 25% auto;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "projet1 projet2 projet3 projet4"
+            "projet5 projet6 projet7 projet8"
+            "projet9 projet10 projet11 projet12"
+            "projet13 projet14 projet15 projet16";
+
+            @for $i from 1 through 16 { 
+              span:nth-child(#{$i}) {
+                height: 3.5em;
+                width: 3.5em;
+                margin: 1em;
+              }
             }
           }
         }
@@ -215,43 +220,43 @@ html {
     /* Troisième section */
     section:nth-of-type(3) {
 
-      height: fit-content;
       font-family: "Courier New", sans-serif;
-      width: 60vw;
-      margin: 1% auto;
+      height:100vh;
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content:center;
+      width: fit-content;
+      margin: 0 auto;
 
       >div {
-        padding-bottom: 4pc;
-        padding-top: 1pc;
-      }
+        >div {
+          display:flex;
+          flex-direction: column;
+          align-items:center;
+          justify-content:center;
+          width: 100%;
+          padding: 1pc;
 
-      div {
-        text-align: center;
-        height: fit-content;
-
-        #desc {
-          position: absolute;
-          font-size:20px;
-          color: #e5e5e5;
-          border-width:12px;
-          background-color: black;
-          text-decoration: none;
-          padding: initial;
-        }
-
-        .glyphicon-chevron-up {
-          font-size:25px;
-          //color: rgb(131, 147, 163);
-          color: black;
-          text-decoration: none;
-          float: right;
-          padding: initial;
-        }
-
-        .carousel-inner {
-          img {
-            width: 100%;
+          #desc {
+            font-size:20px;
+            color: #e5e5e5;
+            background-color: black;
+            text-decoration: none;
+            width: fit-content;
           }
+
+          .glyphicon-chevron-up {
+            font-size:25px;
+            color: black;
+            text-decoration: none;
+
+          }
+        }
+        
+        img {
+          width: fit-content;
+          height: fit-content;
         }
       }
 
@@ -264,7 +269,7 @@ html {
 
       @media screen and (max-width: $minw) {
         width: 85%;
-        margin: 1% auto;
+        margin: 25% auto;
         #fenetrePorjet {
           box-shadow: 8px 8px 8px #888888;
         }
@@ -289,8 +294,59 @@ html {
         height:100vh;
         display:flex;
         align-items:center;
-        justify-content:center;
+        justify-content:space-evenly;
+        list-style-type: none;
+        font-size: 0;
+
+        li:nth-of-type(1) {
+
+          div:nth-of-type(1) {
+            background: url(./img/equipe/geoffroy.png);
+            height: 9pc;
+            width: 9pc;
+          }
+        }
+        li:nth-of-type(2) {
+          div:nth-of-type(1) {
+            background: url(./img/equipe/maxime.png);
+            height: 9pc;
+            width: 9pc;
+          }
+        }
+        li:nth-of-type(3) {
+          div:nth-of-type(1) {
+            background: url(./img/equipe/denis.png);
+            height: 9pc;
+            width: 9pc;
+          }
+        }
+
+        span {
+          display: inline-block;
+          height: 2pc;
+          width: 2pc;
+          opacity: 0.5;
+        }
+
+        a:nth-of-type(1) span {
+          background: url(img/ig.svg) no-repeat;
+        }
+        a:nth-of-type(2) span {
+          background: url(img/fb.svg) no-repeat;
+        }
+
+        div:nth-of-type(2) {
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        :hover {
+          opacity: 1;
+        }
       }
+    
+
+
     }
     /* Cinquième section */
     section:nth-of-type(5) {
@@ -391,130 +447,71 @@ html {
     }
   }
 
-  @media screen and (min-width: $minw) {
-    footer{
-      display: none;
-    }
-  }
+  footer {
+    display: none;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 1pc;
+    background-color: #e5e5e5;
 
-  @media screen and (max-width: $minw) {
-
-    footer {
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      text-align: center;
-      padding: 1pc;
-      vertical-align: middle;
-
-
-      #navigation-up {
-        color: #e5e5e5;
+    a {
         text-decoration: none;
-        width: 2em;
-        height: 2em;
-        float: left;
-        vertical-align: middle;
-        background:url(./img/mosaique/carreGris.svg);
-        background-size: contain;
-        opacity: 0.5;
-        div{
-          padding: 25%;
-        }
-      }
-
-      #navigation-down {
-        color: #e5e5e5;
-        text-decoration: none;
-        width: 2em;
-        height: 2em;
-        float: right;
-        vertical-align: middle;
-        background:url(./img/mosaique/carreGris.svg);
-        background-size: contain;
-        opacity: 0.5;
-        div{
-          padding: 25%;
-        }
-      }
-
-      area {
-        color: #e5e5e5;
-        width: 2em;
-        height: 2em;
-
-        display: inline-block;
-        vertical-align: middle;
+        font-family: "Courier New", sans-serif;
+        color: black;
+        margin: 1pc 1pc;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+      }
+
+      a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
         -webkit-transition-property: transform;
         transition-property: transform;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out;
       }
-      
-      area:nth-of-type(1) {
-          background: url(img/ig.svg) no-repeat;
+      a:hover, a:focus, a:active {
+        color: #939598;
       }
-
-      area:nth-of-type(2) {
-          background: url(img/fb.svg) no-repeat;
-      }
-
-      a:focus, A:focus, area:focus, a:active, area:active {
-          -webkit-transform: scale(1.3) translateZ(0);
-          transform: scale(1.3) translateZ(0);
-      }
-
-      @keyframes hvr-buzz-out {
-          10% {
-            -webkit-transform: translateX(3px) rotate(2deg);
-            transform: translateX(3px) rotate(2deg);
-          }
-          20% {
-            -webkit-transform: translateX(-3px) rotate(-2deg);
-            transform: translateX(-3px) rotate(-2deg);
-          }
-          30% {
-            -webkit-transform: translateX(3px) rotate(2deg);
-            transform: translateX(3px) rotate(2deg);
-          }
-          40% {
-            -webkit-transform: translateX(-3px) rotate(-2deg);
-            transform: translateX(-3px) rotate(-2deg);
-          }
-          50% {
-            -webkit-transform: translateX(2px) rotate(1deg);
-            transform: translateX(2px) rotate(1deg);
-          }
-          60% {
-            -webkit-transform: translateX(-2px) rotate(-1deg);
-            transform: translateX(-2px) rotate(-1deg);
-          }
-          70% {
-            -webkit-transform: translateX(2px) rotate(1deg);
-            transform: translateX(2px) rotate(1deg);
-          }
-          80% {
-            -webkit-transform: translateX(-2px) rotate(-1deg);
-            transform: translateX(-2px) rotate(-1deg);
-          }
-          90% {
-            -webkit-transform: translateX(1px) rotate(0);
-            transform: translateX(1px) rotate(0);
-          }
-          100% {
-            -webkit-transform: translateX(-1px) rotate(0);
-            transform: translateX(-1px) rotate(0);
-          }
-        }
+      a:hover:before, a:focus:before, a:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
       }
     }
+
+  .carreGrow {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  .carreGrow:hover, .carreGrow:focus, .carreGrow:active {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
 }

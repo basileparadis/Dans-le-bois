@@ -1,20 +1,20 @@
 function doWithThisElement(element) {
 
-    document.getElementById('desc').innerHTML = "-- "+element.alt+" --";
+    document.getElementById('desc').innerHTML = "-- "+element.title+" --";
 
     switch($("#imagesTravaux > .item").length)
     {
         case 1:
-            $('#imagesTravaux').append("<div class='item' id='cadre2'><img alt='DeuxiemeImage' id='image2'></img></div>");
-            $('#imagesTravaux').append("<div class='item' id='cadre3'><img alt='TroisiemeImage' id='image3'></img></div>");
-            $('#imagesTravaux').append("<div class='item' id='cadre4'><img alt='QuatriemeImage' id='image4'></img></div>");
+            $('#imagesTravaux').append("<div class='item' id='cadre2'><img title='DeuxiemeImage' id='image2'></img></div>");
+            $('#imagesTravaux').append("<div class='item' id='cadre3'><img title='TroisiemeImage' id='image3'></img></div>");
+            $('#imagesTravaux').append("<div class='item' id='cadre4'><img title='QuatriemeImage' id='image4'></img></div>");
             break;
         case 2:
-            $('#imagesTravaux').append("<div class='item' id='cadre3'><img alt='TroisiemeImage' id='image3'></img></div>");
-            $('#imagesTravaux').append("<div class='item' id='cadre4'><img alt='QuatriemeImage' id='image4'></img></div>");
+            $('#imagesTravaux').append("<div class='item' id='cadre3'><img title='TroisiemeImage' id='image3'></img></div>");
+            $('#imagesTravaux').append("<div class='item' id='cadre4'><img title='QuatriemeImage' id='image4'></img></div>");
             break;
         case 3:
-            $('#imagesTravaux').append("<div class='item' id='cadre4'><img alt='QuatriemeImage' id='image4'></img></div>");
+            $('#imagesTravaux').append("<div class='item' id='cadre4'><img title='QuatriemeImage' id='image4'></img></div>");
             break;
         case 4:
             break;
@@ -32,10 +32,10 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             $('#myCarousel').find('#indicateur3').show();
             $('#myCarousel').find('#indicateur4').show();
-            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.alt+"/2.jpg' alt='PremiereImage' id='image1'></img>";
-            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.alt+"/3.jpg' alt='DeuxiemeImage' id='image2'></img>";
-            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.alt+"/4.jpg' alt='TroisiemeImage' id='image3'></img>";
-            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.alt+"/5.jpg' alt='QuatriemeImage' id='image4'></img>";
+            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.title+"/2.jpg' title='PremiereImage' id='image1'></img>";
+            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.title+"/3.jpg' title='DeuxiemeImage' id='image2'></img>";
+            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.title+"/4.jpg' title='TroisiemeImage' id='image3'></img>";
+            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.title+"/5.jpg' title='QuatriemeImage' id='image4'></img>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";       
             console.log(document.getElementById('image1').outerHTML);
             break;
@@ -47,10 +47,10 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             $('#myCarousel').find('#indicateur3').show();
             $('#myCarousel').find('#indicateur4').show();
-            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.alt+"/2.jpg' alt='PremiereImage' id='image1'></img>";
-            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.alt+"/3.jpg' alt='DeuxiemeImage' id='image2'></img>";
-            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.alt+"/4.jpg' alt='TroisiemeImage' id='image3'></img>";
-            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.alt+"/5.jpg' alt='QuatriemeImage' id='image4'></img>";     
+            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.title+"/2.jpg' title='PremiereImage' id='image1'></img>";
+            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.title+"/3.jpg' title='DeuxiemeImage' id='image2'></img>";
+            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.title+"/4.jpg' title='TroisiemeImage' id='image3'></img>";
+            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.title+"/5.jpg' title='QuatriemeImage' id='image4'></img>";     
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";       
             break;
         // Fender
@@ -61,10 +61,10 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             $('#myCarousel').find('#indicateur3').show();
             $('#myCarousel').find('#indicateur4').show();
-            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.alt+"/2.jpg' alt='PremiereImage' id='image1'></img>";
-            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.alt+"/3.jpg' alt='DeuxiemeImage' id='image2'></img>";
-            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.alt+"/4.jpg' alt='TroisiemeImage' id='image3'></img>";
-            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.alt+"/5.jpg' alt='QuatriemeImage' id='image4'></img>";  
+            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.title+"/2.jpg' title='PremiereImage' id='image1'></img>";
+            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.title+"/3.jpg' title='DeuxiemeImage' id='image2'></img>";
+            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.title+"/4.jpg' title='TroisiemeImage' id='image3'></img>";
+            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.title+"/5.jpg' title='QuatriemeImage' id='image4'></img>";  
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";            
             break;
         // StenslandGirard
@@ -75,10 +75,10 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             $('#myCarousel').find('#indicateur3').show();
             $('#myCarousel').find('#indicateur4').show();
-            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.alt+"/1.jpg' alt='PremiereImage' id='image1'></img>";
-            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.alt+"/2.jpg' alt='DeuxiemeImage' id='image2'></img>";
-            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.alt+"/3.jpg' alt='TroisiemeImage' id='image3'></img>";
-            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.alt+"/4.jpg' alt='QuatriemeImage' id='image4'></img>";
+            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.title+"/1.jpg' title='PremiereImage' id='image1'></img>";
+            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.title+"/2.jpg' title='DeuxiemeImage' id='image2'></img>";
+            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.title+"/3.jpg' title='TroisiemeImage' id='image3'></img>";
+            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.title+"/4.jpg' title='QuatriemeImage' id='image4'></img>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";       
             break;
         // LaBeteASeguin
@@ -91,8 +91,8 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             $('#myCarousel').find('#indicateur3').hide();
             $('#myCarousel').find('#indicateur4').hide();
-            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.alt+"/1.jpg' alt='PremiereImage' id='image1'></img>";
-            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.alt+"/2.jpg' alt='DeuxiemeImage' id='image2'></img>";
+            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.title+"/1.jpg' title='PremiereImage' id='image1'></img>";
+            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.title+"/2.jpg' title='DeuxiemeImage' id='image2'></img>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
             break;
         // Parrafine
@@ -103,10 +103,10 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             $('#myCarousel').find('#indicateur3').show();
             $('#myCarousel').find('#indicateur4').show();
-            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.alt+"/1.jpg' alt='PremiereImage' id='image1'></img>";
-            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.alt+"/2.jpg' alt='DeuxiemeImage' id='image2'></img>";
-            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.alt+"/3.jpg' alt='TroisiemeImage' id='image3'></img>";
-            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.alt+"/4.jpg' alt='QuatriemeImage' id='image4'></img>";
+            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.title+"/1.jpg' title='PremiereImage' id='image1'></img>";
+            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.title+"/2.jpg' title='DeuxiemeImage' id='image2'></img>";
+            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.title+"/3.jpg' title='TroisiemeImage' id='image3'></img>";
+            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.title+"/4.jpg' title='QuatriemeImage' id='image4'></img>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
             break;
         // PurPak
@@ -117,10 +117,10 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             $('#myCarousel').find('#indicateur3').show();
             $('#myCarousel').find('#indicateur4').show();
-            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.alt+"/1.jpg' alt='PremiereImage' id='image1'></img>";
-            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.alt+"/2.jpg' alt='DeuxiemeImage' id='image2'></img>";
-            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.alt+"/3.jpg' alt='TroisiemeImage' id='image3'></img>";
-            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.alt+"/4.jpg' alt='QuatriemeImage' id='image4'></img>";
+            document.getElementById('image1').outerHTML = "<img src='./img/travaux/"+element.title+"/1.jpg' title='PremiereImage' id='image1'></img>";
+            document.getElementById('image2').outerHTML = "<img src='./img/travaux/"+element.title+"/2.jpg' title='DeuxiemeImage' id='image2'></img>";
+            document.getElementById('image3').outerHTML = "<img src='./img/travaux/"+element.title+"/3.jpg' title='TroisiemeImage' id='image3'></img>";
+            document.getElementById('image4').outerHTML = "<img src='./img/travaux/"+element.title+"/4.jpg' title='QuatriemeImage' id='image4'></img>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
             break;
         // ByeBye
@@ -193,7 +193,7 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             document.getElementById('image1').outerHTML="<iframe src='https://player.vimeo.com/video/217019210' id='image1' width='640' height='270' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>";
             document.getElementById('image2').outerHTML="<iframe src='https://player.vimeo.com/video/217021460' id='image2' width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>";
-            document.getElementById('texte').innerHTML = "++ Un résumé de quelques projets… ++ A resume of some of the work we did…";
+            document.getElementById('texte').innerHTML = "++ Un résumé de quelques projets… \r\n++ A resume of some of the work we did…";
             break;
         // PauseKahwa
         case '15':
