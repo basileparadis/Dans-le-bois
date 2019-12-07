@@ -239,7 +239,7 @@ html {
           padding: 1pc;
 
           #desc {
-            font-size:20px;
+            font-size:15px;
             color: #e5e5e5;
             background-color: black;
             text-decoration: none;
@@ -270,8 +270,19 @@ html {
       @media screen and (max-width: $minw) {
         width: 85%;
         margin: 25% auto;
-        #fenetrePorjet {
+        #fenetreProjet {
           box-shadow: 8px 8px 8px #888888;
+        }
+        img {
+          width: 25%;
+          height: fit-content;
+        }
+        #desc {
+          font-size:0px;
+          color: #e5e5e5;
+          background-color: blue;
+          text-decoration: none;
+          width: fit-content;
         }
       }
 
@@ -289,35 +300,138 @@ html {
     section:nth-of-type(4) {
 
       height: 100vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-around;
+      $tailleCarre: 9pc;
 
-      ul {
-        height:100vh;
-        display:flex;
-        align-items:center;
-        justify-content:space-evenly;
-        list-style-type: none;
-        font-size: 0;
+      div {
 
-        li:nth-of-type(1) {
+        height: fit-content;
+        width: 100%;
+        
+        ul {
+          display:flex;
+          vertical-align: text-top;
+          justify-content:space-around;
+          list-style-type: none;
+          font-size: 0;
 
-          div:nth-of-type(1) {
-            background: url(./img/equipe/geoffroy.png);
-            height: 9pc;
-            width: 9pc;
+          li:nth-of-type(1) {
+
+            div:nth-of-type(1) {
+              background: url(./img/equipe/geoffroy.png);
+              height: $tailleCarre;
+              width: $tailleCarre;
+              background-size: contain;
+              background-position: center center;
+            }
+
+            @media screen and (max-width: $minw) {
+
+              div:nth-of-type(1) {
+                display: block;
+                height : 5pc;
+                width : 5pc
+              }
+            }
           }
-        }
-        li:nth-of-type(2) {
-          div:nth-of-type(1) {
-            background: url(./img/equipe/maxime.png);
-            height: 9pc;
-            width: 9pc;
+          li:nth-of-type(2) {
+            display: grid;
+            height: fit-content;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+            "maxime ."
+            ". carreNoir";
+
+            div:nth-of-type(1) {
+              background: url(./img/equipe/maxime.png);
+              height: $tailleCarre;
+              width: $tailleCarre;
+              grid-area: maxime;
+              background-size: contain;
+              background-position: center center;
+            }
+
+            >div:nth-of-type(2) {
+              background: url(./img/mosaique/carreNoir.png);
+              height: $tailleCarre;
+              width: $tailleCarre;
+              grid-area: carreNoir;
+              background-size: contain;
+              background-position: center center;
+            }
+
+            @media screen and (max-width: $minw) {
+
+              div {
+
+                display: none;
+              }
+              div:nth-of-type(1) {
+                display: block;
+                height : 5pc;
+                width : 5pc
+              }
+            }
           }
-        }
-        li:nth-of-type(3) {
-          div:nth-of-type(1) {
-            background: url(./img/equipe/denis.png);
-            height: 9pc;
-            width: 9pc;
+          li:nth-of-type(3) {
+            display: grid;
+            height: fit-content;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+            "denis . carreBlancDroite"
+            ". carreNoirMilieu ."
+            "carreNoirGauche . .";
+
+            div:nth-of-type(1) {
+              background: url(./img/equipe/denis.png);
+              height: $tailleCarre;
+              width: $tailleCarre;
+              grid-area: denis;
+              background-size: contain;
+              background-position: center center;
+            }
+            >div:nth-of-type(2) {
+              background: url(./img/mosaique/carreBlanc.png);
+              height: $tailleCarre;
+              width: $tailleCarre;
+              grid-area: carreBlancDroite;
+              background-size: contain;
+              background-position: center center;
+            }
+            div:nth-of-type(3) {
+              background: url(./img/mosaique/carreNoir.png);
+              height: $tailleCarre;
+              width: $tailleCarre;
+              grid-area: carreNoirMilieu;
+              background-size: contain;
+              background-position: center center;
+            }
+            div:nth-of-type(4) {
+              background: url(./img/mosaique/carreNoir.png);
+              height: $tailleCarre;
+              width: $tailleCarre;
+              grid-area: carreNoirGauche;
+              background-size: contain;
+              background-position: center center;
+            }
+
+            @media screen and (max-width: $minw) {
+
+              div {
+
+                display: none;
+              }
+              div:nth-of-type(1) {
+                display: block;
+                height : 5pc;
+                width : 5pc
+              }
+            }
+          }
           }
         }
 
@@ -326,6 +440,7 @@ html {
           height: 2pc;
           width: 2pc;
           opacity: 0.5;
+          margin: 5px;
         }
 
         a:nth-of-type(1) span {
@@ -339,44 +454,50 @@ html {
           display: flex;
           justify-content: flex-end;
         }
-
-        :hover {
-          opacity: 1;
-        }
       }
-    
 
+      p {
+        width: 60vw;
+        margin-left: 5pc;
+        font-family: "Courier New", sans-serif;
+      }
+      p:nth-of-type(1) {
+        margin-bottom: 3pc;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.5em;
+      }
 
-    }
     /* Cinquième section */
     section:nth-of-type(5) {
 
-      $tailleCarre : 5pc;
+      $tailleCarre : 9pc;
       margin-top: 50vh;
       margin-bottom: 40vh;
-
+      
       div{
         vertical-align: text-top;
         text-align: center;
         height: fit-content;
 
-        div:nth-of-type(1) {
+        #carreJaune {
           background: url(img/mosaique/carreJaune.png) no-repeat;
           background-size: contain;
           background-position: center center;
           width: $tailleCarre;
           height: $tailleCarre;
           display: inline-block;
-          margin: auto 5%;
         }
 
-        div:nth-of-type(2) {
+        div {
 
           display: inline-block;
           text-align: initial;
           height: fit-content;
-          margin: auto 5%;
 
+          p {
+            width: fit-content;
+          }
           p a span { font-size:2em; }
 
           a {
@@ -384,17 +505,18 @@ html {
             color: black;
             font-family: "Courier New", sans-serif;
           }
-        
-          a:nth-child(5){
-            background: url(img/ig2.svg) no-repeat;
-            color: #e5e5e5;
-            font-size: 45px;
-          }
 
-          a:nth-child(6) {
+          div a span {
+            display: inline-block;
+            height: 2pc;
+            width: 2pc;
+          }
+  
+          div a:nth-of-type(1) span {
+            background: url(img/ig2.svg) no-repeat;
+          }
+          div a:nth-of-type(2) span {
             background: url(img/fb2.svg) no-repeat;
-            color: #e5e5e5;
-            font-size: 45px;
           }
         }
 

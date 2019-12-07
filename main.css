@@ -875,7 +875,7 @@ html body section:nth-of-type(3) > div > div {
 }
 
 html body section:nth-of-type(3) > div > div #desc {
-  font-size: 20px;
+  font-size: 15px;
   color: #e5e5e5;
   background-color: black;
   text-decoration: none;
@@ -911,9 +911,24 @@ html body section:nth-of-type(3) > div img {
     width: 85%;
     margin: 25% auto;
   }
-  html body section:nth-of-type(3) #fenetrePorjet {
+  html body section:nth-of-type(3) #fenetreProjet {
     -webkit-box-shadow: 8px 8px 8px #888888;
             box-shadow: 8px 8px 8px #888888;
+  }
+  html body section:nth-of-type(3) img {
+    width: 25%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  html body section:nth-of-type(3) #desc {
+    font-size: 0px;
+    color: #e5e5e5;
+    background-color: blue;
+    text-decoration: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
@@ -930,57 +945,181 @@ html body section:nth-of-type(3) .carousel-indicators {
 
 html body section:nth-of-type(4) {
   height: 100vh;
-}
-
-html body section:nth-of-type(4) ul {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body section:nth-of-type(4) div {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+html body section:nth-of-type(4) div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: text-top;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style-type: none;
   font-size: 0;
 }
 
-html body section:nth-of-type(4) ul li:nth-of-type(1) div:nth-of-type(1) {
+html body section:nth-of-type(4) div ul li:nth-of-type(1) div:nth-of-type(1) {
   background: url(./img/equipe/geoffroy.png);
   height: 9pc;
   width: 9pc;
+  background-size: contain;
+  background-position: center center;
 }
 
-html body section:nth-of-type(4) ul li:nth-of-type(2) div:nth-of-type(1) {
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(4) div ul li:nth-of-type(1) div:nth-of-type(1) {
+    display: block;
+    height: 5pc;
+    width: 5pc;
+  }
+}
+
+html body section:nth-of-type(4) div ul li:nth-of-type(2) {
+  display: -ms-grid;
+  display: grid;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "maxime ." ". carreNoir";
+}
+
+html body section:nth-of-type(4) div ul li:nth-of-type(2) div:nth-of-type(1) {
   background: url(./img/equipe/maxime.png);
   height: 9pc;
   width: 9pc;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: maxime;
+  background-size: contain;
+  background-position: center center;
 }
 
-html body section:nth-of-type(4) ul li:nth-of-type(3) div:nth-of-type(1) {
+html body section:nth-of-type(4) div ul li:nth-of-type(2) > div:nth-of-type(2) {
+  background: url(./img/mosaique/carreNoir.png);
+  height: 9pc;
+  width: 9pc;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: carreNoir;
+  background-size: contain;
+  background-position: center center;
+}
+
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(4) div ul li:nth-of-type(2) div {
+    display: none;
+  }
+  html body section:nth-of-type(4) div ul li:nth-of-type(2) div:nth-of-type(1) {
+    display: block;
+    height: 5pc;
+    width: 5pc;
+  }
+}
+
+html body section:nth-of-type(4) div ul li:nth-of-type(3) {
+  display: -ms-grid;
+  display: grid;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "denis . carreBlancDroite" ". carreNoirMilieu ." "carreNoirGauche . .";
+}
+
+html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(1) {
   background: url(./img/equipe/denis.png);
   height: 9pc;
   width: 9pc;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: denis;
+  background-size: contain;
+  background-position: center center;
 }
 
-html body section:nth-of-type(4) ul span {
+html body section:nth-of-type(4) div ul li:nth-of-type(3) > div:nth-of-type(2) {
+  background: url(./img/mosaique/carreBlanc.png);
+  height: 9pc;
+  width: 9pc;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: carreBlancDroite;
+  background-size: contain;
+  background-position: center center;
+}
+
+html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(3) {
+  background: url(./img/mosaique/carreNoir.png);
+  height: 9pc;
+  width: 9pc;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: carreNoirMilieu;
+  background-size: contain;
+  background-position: center center;
+}
+
+html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(4) {
+  background: url(./img/mosaique/carreNoir.png);
+  height: 9pc;
+  width: 9pc;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: carreNoirGauche;
+  background-size: contain;
+  background-position: center center;
+}
+
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(4) div ul li:nth-of-type(3) div {
+    display: none;
+  }
+  html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(1) {
+    display: block;
+    height: 5pc;
+    width: 5pc;
+  }
+}
+
+html body section:nth-of-type(4) span {
   display: inline-block;
   height: 2pc;
   width: 2pc;
   opacity: 0.5;
+  margin: 5px;
 }
 
-html body section:nth-of-type(4) ul a:nth-of-type(1) span {
+html body section:nth-of-type(4) a:nth-of-type(1) span {
   background: url(img/ig.svg) no-repeat;
 }
 
-html body section:nth-of-type(4) ul a:nth-of-type(2) span {
+html body section:nth-of-type(4) a:nth-of-type(2) span {
   background: url(img/fb.svg) no-repeat;
 }
 
-html body section:nth-of-type(4) ul div:nth-of-type(2) {
+html body section:nth-of-type(4) div:nth-of-type(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -989,8 +1128,21 @@ html body section:nth-of-type(4) ul div:nth-of-type(2) {
           justify-content: flex-end;
 }
 
-html body section:nth-of-type(4) ul :hover {
-  opacity: 1;
+html body p {
+  width: 60vw;
+  margin-left: 5pc;
+  font-family: "Courier New", sans-serif;
+}
+
+html body p:nth-of-type(1) {
+  margin-bottom: 3pc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.5em;
 }
 
 html body section:nth-of-type(5) {
@@ -1006,45 +1158,51 @@ html body section:nth-of-type(5) div {
   height: fit-content;
 }
 
-html body section:nth-of-type(5) div div:nth-of-type(1) {
+html body section:nth-of-type(5) div #carreJaune {
   background: url(img/mosaique/carreJaune.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  width: 5pc;
-  height: 5pc;
+  width: 9pc;
+  height: 9pc;
   display: inline-block;
-  margin: auto 5%;
 }
 
-html body section:nth-of-type(5) div div:nth-of-type(2) {
+html body section:nth-of-type(5) div div {
   display: inline-block;
   text-align: initial;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: auto 5%;
 }
 
-html body section:nth-of-type(5) div div:nth-of-type(2) p a span {
+html body section:nth-of-type(5) div div p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+html body section:nth-of-type(5) div div p a span {
   font-size: 2em;
 }
 
-html body section:nth-of-type(5) div div:nth-of-type(2) a {
+html body section:nth-of-type(5) div div a {
   text-decoration: none;
   color: black;
   font-family: "Courier New", sans-serif;
 }
 
-html body section:nth-of-type(5) div div:nth-of-type(2) a:nth-child(5) {
-  background: url(img/ig2.svg) no-repeat;
-  color: #e5e5e5;
-  font-size: 45px;
+html body section:nth-of-type(5) div div div a span {
+  display: inline-block;
+  height: 2pc;
+  width: 2pc;
 }
 
-html body section:nth-of-type(5) div div:nth-of-type(2) a:nth-child(6) {
+html body section:nth-of-type(5) div div div a:nth-of-type(1) span {
+  background: url(img/ig2.svg) no-repeat;
+}
+
+html body section:nth-of-type(5) div div div a:nth-of-type(2) span {
   background: url(img/fb2.svg) no-repeat;
-  color: #e5e5e5;
-  font-size: 45px;
 }
 
 html body section:nth-of-type(5) div div:nth-of-type(3) {
@@ -1071,8 +1229,8 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(3) {
   grid-area: "carreblanc";
   background-size: contain;
   background-position: center center;
-  width: 5pc;
-  height: 5pc;
+  width: 9pc;
+  height: 9pc;
 }
 
 html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
@@ -1080,8 +1238,8 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
   grid-area: "carrenoir1";
   background-size: contain;
   background-position: center center;
-  width: 5pc;
-  height: 5pc;
+  width: 9pc;
+  height: 9pc;
 }
 
 html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
@@ -1089,8 +1247,8 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
   grid-area: "carrenoir2";
   background-size: contain;
   background-position: center center;
-  width: 5pc;
-  height: 5pc;
+  width: 9pc;
+  height: 9pc;
 }
 
 html footer {

@@ -193,7 +193,7 @@ function doWithThisElement(element) {
             $('#myCarousel').find('#indicateur2').show();
             document.getElementById('image1').outerHTML="<iframe src='https://player.vimeo.com/video/217019210' id='image1' width='640' height='270' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>";
             document.getElementById('image2').outerHTML="<iframe src='https://player.vimeo.com/video/217021460' id='image2' width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>";
-            document.getElementById('texte').innerHTML = "++ Un résumé de quelques projets… \r\n++ A resume of some of the work we did…";
+            document.getElementById('texte').innerHTML = "++ Un résumé de quelques projets… ++ A resume of some of the work we did…";
             break;
         // PauseKahwa
         case '15':
