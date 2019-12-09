@@ -956,9 +956,6 @@ html body section:nth-of-type(4) {
 }
 
 html body section:nth-of-type(4) div {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   width: 100%;
 }
 
@@ -970,7 +967,6 @@ html body section:nth-of-type(4) div ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
-  font-size: 0;
 }
 
 html body section:nth-of-type(4) div ul li:nth-of-type(1) div:nth-of-type(1) {
@@ -1128,13 +1124,19 @@ html body section:nth-of-type(4) div:nth-of-type(2) {
           justify-content: flex-end;
 }
 
-html body p {
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(4) {
+    font-size: 75%;
+  }
+}
+
+html body section:nth-of-type(4) p {
   width: 60vw;
-  margin-left: 5pc;
+  margin-left: 7%;
   font-family: "Courier New", sans-serif;
 }
 
-html body p:nth-of-type(1) {
+html body section:nth-of-type(4) p:nth-of-type(1) {
   margin-bottom: 3pc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1146,16 +1148,39 @@ html body p:nth-of-type(1) {
 }
 
 html body section:nth-of-type(5) {
-  margin-top: 50vh;
-  margin-bottom: 40vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 html body section:nth-of-type(5) div {
-  vertical-align: text-top;
   text-align: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(5) div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 2pc;
+    padding-bottom: 2pc;
+  }
 }
 
 html body section:nth-of-type(5) div #carreJaune {
@@ -1167,12 +1192,22 @@ html body section:nth-of-type(5) div #carreJaune {
   display: inline-block;
 }
 
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(5) div #carreJaune {
+    width: 4pc;
+    height: 4pc;
+  }
+}
+
 html body section:nth-of-type(5) div div {
   display: inline-block;
   text-align: initial;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 html body section:nth-of-type(5) div div p {
@@ -1233,6 +1268,13 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(3) {
   height: 9pc;
 }
 
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(3) {
+    width: 4pc;
+    height: 4pc;
+  }
+}
+
 html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
   background: url(img/mosaique/carreNoir.png) no-repeat;
   grid-area: "carrenoir1";
@@ -1242,6 +1284,13 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
   height: 9pc;
 }
 
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
+    width: 4pc;
+    height: 4pc;
+  }
+}
+
 html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
   background: url(img/mosaique/carreNoir.png) no-repeat;
   grid-area: "carrenoir2";
@@ -1249,6 +1298,13 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
   background-position: center center;
   width: 9pc;
   height: 9pc;
+}
+
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
+    width: 4pc;
+    height: 4pc;
+  }
 }
 
 html footer {
