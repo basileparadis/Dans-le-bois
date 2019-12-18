@@ -1,6 +1,7 @@
-function doWithThisElement(element) {
+function showProject(element) {
 
-    document.getElementById('desc').innerHTML = "-- "+element.title+" --";
+    document.getElementById('titre').innerHTML = "-- "+element.title+" --";
+    location.href='#focusWork';
 
     switch(element.id)
     {
@@ -136,7 +137,7 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/329202293' id='image1' width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/329202293' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ production : Guillaume Lespérance et KOTV ++ réalisation : Simon-Olivier Fecteau (mettre le logo des Gémeaux finaliste 2019)";
@@ -146,7 +147,7 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/355572258' id='image1' width='640' height='360' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/355572258' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ Un résumé de quelques projets… ++ A resume of some of the work we did…";
@@ -156,7 +157,7 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/253806432' id='image1' width='640' height='360' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/253806432' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "production : Josée Vallée / Datsit Sphère réalisation : Richard Blaimert";
@@ -166,7 +167,7 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/329202814' id='image1' width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/329202814' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ production : Radio-Canada ++ réalisation : Guy Gagnon";
@@ -176,7 +177,7 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/329202750' id='image1' width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/329202750' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ À venir.";
@@ -186,7 +187,7 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/329203097' id='image1' width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/329203097' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ production : Téléfiction";
@@ -196,10 +197,10 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/217019210' id='image1' width='640' height='270' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/217019210' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                     <div class='item' id='cadre2'> \
-                        <iframe src='https://player.vimeo.com/video/217021460' id='image2' width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/217021460' id='image2' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ Un résumé de quelques projets… ++ A resume of some of the work we did…";
@@ -209,7 +210,7 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/234550377' id='image1' width='640' height='360' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/234550377' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ À venir.";
@@ -219,7 +220,7 @@ function doWithThisElement(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <iframe src='https://player.vimeo.com/video/234550418' id='image1' width='640' height='360' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
+                        <iframe src='https://player.vimeo.com/video/234550418' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ Réalisation : Guy Gagnon";
@@ -236,4 +237,20 @@ function doWithThisElement(element) {
     {
         $('#myCarousel').find('.carousel-control').hide();
     }
+}
+
+function changerTexte(membre) {
+    console.log(membre.title);
+    switch(membre.title) 
+    {
+        case "Denis Dulude":
+            document.getElementById('presentation').innerHTML = "DenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDulude";
+            break;
+        case "Geoffroy":
+            document.getElementById('presentation').innerHTML = "GeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroy";
+            break;
+        case "Maxime":
+            document.getElementById('presentation').innerHTML = "MaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaxime";
+            break;
+    }            
 }
