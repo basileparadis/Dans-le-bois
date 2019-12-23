@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
   height: 100vh;
   $minw: 1155px;
-  $minh: 736px;
+  $minh: 735px;
 
   body {
 
@@ -127,22 +127,19 @@ html {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(8, 1fr);
             grid-template-areas: 
-            ". projet1 ."
-            "projet2 . projet3"
-            ". projet4 ."
-            "projet5 . projet6"
-            ". projet7 ."
-            "projet8 . projet9"
-            ". projet10 ."
-            "projet11 . projet12"
-            ". projet13 ."
-            "projet14 . projet15"
-            ". projet16 .";
+            "projet1 projet2 . projet3"
+            "projet4 . projet5 ."
+            ". projet7 . projet6"
+            "projet9 . projet8 ."
+            ". projet11 . ."
+            ". projet10 . projet12"
+            "projet13 . projet14 ."
+            ". projet15 . projet16";
 
             @for $i from 1 through 16 { 
               span:nth-child(#{$i}) {
-                height: 4em;
-                width: 4em;
+                height: 5em;
+                width: 5em;
               }
             }
           }
@@ -169,20 +166,17 @@ html {
           {
             height: fit-content;
             width: fit-content;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(9, 1fr);
             grid-template-areas: 
-            ". projet1 ."
-            "projet2 . projet3"
-            ". projet4 ."
-            "projet5 . projet6"
-            ". projet7 ."
-            "projet8 . projet9"
-            ". projet10 ."
-            "projet11 . projet12"
-            ". projet13 ."
-            "projet14 . projet15"
-            ". projet16 .";
+            "projet1 projet2 . projet3"
+            "projet4 . projet5 ."
+            ". projet7 . projet6"
+            "projet9 . projet8 ."
+            ". projet11 . ."
+            ". projet10 . projet12"
+            "projet13 . projet14 ."
+            ". projet15 projet16 .";
 
             @for $i from 1 through 16 { 
               span:nth-child(#{$i}) {
@@ -233,7 +227,6 @@ html {
         align-items:center;
         justify-content:space-between;
         padding: 1pc;
-        width: 100%;
 
         #titre {
           font-size:15px;
@@ -250,33 +243,7 @@ html {
           width: 2pc;
           height: 2pc;
         }
-
-        @media screen and (min-width: $minw) {
-          #description {
-            margin-left: 20%;
-            margin-right: 20%;
-            margin-top: 10%;
-            margin-bottom: 10%;
-          }
-        }
-  
-        @media screen and (max-width: $minw) {
-
-          /*#description {
-            margin-left: 20%;
-            margin-right: 20%;
-            margin-top: 10%;
-            margin-bottom: 10%;
-          }*/
-          #titre {
-            font-size:75%;
-          }
-          .item {
-            box-shadow: 8px 8px 8px #888888;
-            //width: 500%;
-          }
-        }
-
+        
         #texte {
           padding: 1em;
           height: fit-content;
@@ -284,6 +251,22 @@ html {
         
         .carousel-indicators {
           bottom: 0;
+        }
+
+        @media screen and (min-width: $minw) {
+          #description {
+            /*margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10%;
+            margin-bottom: 10%;*/
+          }
+        }
+  
+        @media screen and (max-width: $minw) {
+
+          #titre {
+            font-size:75%;
+          }
         }
       }
     }
@@ -295,7 +278,7 @@ html {
       display:flex;
       align-items:center;
       justify-content:space-around;
-      $tailleCarre: 9pc;
+      $tailleCarre: 8pc;
 
       div {
 
@@ -354,6 +337,7 @@ html {
             }
 
             @media screen and (max-width: $minw) {
+              display: block;
               div:nth-of-type(1) {
                 height : 5pc;
                 width : 5pc
@@ -408,6 +392,7 @@ html {
 
             @media screen and (max-width: $minw) {
 
+              display: block;
               div:nth-of-type(1) {
                 height : 5pc;
                 width : 5pc
@@ -457,20 +442,24 @@ html {
       $tailleCarre : 9pc;
       height: 100vh;
       display: flex;
+      justify-content:space-around;
       align-items:center;
-      $minIcon : 4pc;
+      $minIcon : 2pc;
       
       div{
         text-align: center;
         width: 100%;
-        margin-left: 5%;
-        margin-right: 5%;
         display: flex;
-        align-items:flex-start;
         justify-content:space-around;
 
         @media screen and (max-width: $minw) {
           flex-direction: column;
+          padding: 2pc;
+          align-items:center;
+        }
+
+        @media screen and (max-height: $minh) {
+          flex-direction: row;
           padding-top: 2pc;
           padding-bottom: 2pc;
         }
@@ -482,6 +471,7 @@ html {
           width: $tailleCarre;
           height: $tailleCarre;
           display: inline-block;
+          margin: 0;
 
           @media screen and (max-width: $minw) {
             width: $minIcon;

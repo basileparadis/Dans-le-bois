@@ -1,12 +1,17 @@
 function showProject(element) {
 
+    if($('#logoGemeaux').length)
+    {
+        $('#logoGemeaux').remove();
+    }
+
     document.getElementById('titre').innerHTML = "-- "+element.title+" --";
     location.href='#focusWork';
 
-    switch(element.id)
+    switch($(element).index())
     {
         // PhilippeCouette
-        case '1':
+        case 0:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -25,7 +30,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";       
             break;
         // Elvis
-        case '2':
+        case 1:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -44,7 +49,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";       
             break;
         // Fender
-        case '3':
+        case 2:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -63,7 +68,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";           
             break;
         // StenslandGirard
-        case '4':
+        case 3:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -82,7 +87,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";           
             break;
         // LaBeteASeguin
-        case '5':
+        case 4:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -95,7 +100,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."; 
             break;
         // Parrafine
-        case '6':
+        case 5:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -114,7 +119,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";  
             break;
         // PurPak
-        case '7':
+        case 6:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -133,7 +138,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";  
             break;
         // ByeBye
-        case '8':
+        case 7:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -143,7 +148,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "++ production : Guillaume Lespérance et KOTV ++ réalisation : Simon-Olivier Fecteau (mettre le logo des Gémeaux finaliste 2019)";
             break;
         // Cerebrum
-        case '9':
+        case 8:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -153,7 +158,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "++ Un résumé de quelques projets… ++ A resume of some of the work we did…";
             break;
         // Demo
-        case '10':
+        case 9:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -163,7 +168,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "production : Josée Vallée / Datsit Sphère réalisation : Richard Blaimert";
             break;
         // Gemeaux
-        case '11':
+        case 10:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -171,9 +176,15 @@ function showProject(element) {
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ production : Radio-Canada ++ réalisation : Guy Gagnon";
+            var gemeauxLogo = document.createElement('img');
+            gemeauxLogo.src = './img/travaux/gemeauxLogo.png'
+            gemeauxLogo.setAttribute("id", "logoGemeaux");
+            gemeauxLogo.style.height = '100px';
+            gemeauxLogo.style.width = '100px';
+            document.getElementById("fenetreProjets").appendChild(gemeauxLogo);
             break;
         // LMalediction
-        case '12':
+        case 11:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -183,7 +194,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "++ À venir.";
             break;
         // Marika
-        case '13':
+        case 12:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -193,7 +204,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "++ production : Téléfiction";
             break;
         // NitroRush
-        case '14':
+        case 13:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -206,7 +217,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "++ Un résumé de quelques projets… ++ A resume of some of the work we did…";
             break;
         // PauseKahwa
-        case '15':
+        case 14:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -216,7 +227,7 @@ function showProject(element) {
             document.getElementById('texte').innerHTML = "++ À venir.";
             break;
         // QcCinema
-        case '16':
+        case 15:
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
@@ -240,17 +251,24 @@ function showProject(element) {
 }
 
 function changerTexte(membre) {
-    console.log(membre.title);
+
     switch(membre.title) 
     {
         case "Denis Dulude":
-            document.getElementById('presentation').innerHTML = "DenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDuludeDenisDulude";
+            document.getElementById('presentation').innerHTML = "DenisDuludeDenisDuludeDenisDuludeDenisDulude \
+                                                                DenisDuludeDenisDuludeDenisDuludeDenisDulude \
+                                                                DenisDuludeDenisDuludeDenisDuludeDenisDulude \
+                                                                DenisDuludeDenisDuludeDenisDuludeDenisDulude";
             break;
         case "Geoffroy":
-            document.getElementById('presentation').innerHTML = "GeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroy";
+            document.getElementById('presentation').innerHTML = "GeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroy \
+                                                                GeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroy \
+                                                                GeoffroyGeoffroyGeoffroyGeoffroyGeoffroyGeoffroy";
             break;
         case "Maxime":
-            document.getElementById('presentation').innerHTML = "MaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaximeMaxime";
+            document.getElementById('presentation').innerHTML = "MaximeMaximeMaximeMaximeMaximeMaximeMaximeMaxime \
+                                                                MaximeMaximeMaximeMaximeMaximeMaximeMaximeMaxime \
+                                                                MaximeMaximeMaximeMaximeMaximeMaximeMaximeMaxime";
             break;
     }            
 }

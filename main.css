@@ -515,71 +515,71 @@ html body section:nth-of-type(2) div div span:hover, html body section:nth-of-ty
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: ". projet1 ." "projet2 . projet3" ". projet4 ." "projet5 . projet6" ". projet7 ." "projet8 . projet9" ". projet10 ." "projet11 . projet12" ". projet13 ." "projet14 . projet15" ". projet16 .";
+        grid-template-areas: "projet1 projet2 . projet3" "projet4 . projet5 ." ". projet7 . projet6" "projet9 . projet8 ." ". projet11 . ." ". projet10 . projet12" "projet13 . projet14 ." ". projet15 . projet16";
   }
   html body section:nth-of-type(2) div div span:nth-child(1) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(2) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(3) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(4) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(5) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(6) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(7) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(8) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(9) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(10) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(11) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(12) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(13) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(14) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(15) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
   html body section:nth-of-type(2) div div span:nth-child(16) {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
   }
 }
 
@@ -657,7 +657,7 @@ html body section:nth-of-type(2) div div span:hover, html body section:nth-of-ty
   }
 }
 
-@media screen and (max-height: 736px) {
+@media screen and (max-height: 735px) {
   html body section:nth-of-type(2) div div {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -665,11 +665,11 @@ html body section:nth-of-type(2) div div span:hover, html body section:nth-of-ty
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[8];
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: ". projet1 ." "projet2 . projet3" ". projet4 ." "projet5 . projet6" ". projet7 ." "projet8 . projet9" ". projet10 ." "projet11 . projet12" ". projet13 ." "projet14 . projet15" ". projet16 .";
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[9];
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: "projet1 projet2 . projet3" "projet4 . projet5 ." ". projet7 . projet6" "projet9 . projet8 ." ". projet11 . ." ". projet10 . projet12" "projet13 . projet14 ." ". projet15 projet16 .";
   }
   html body section:nth-of-type(2) div div span:nth-child(1) {
     height: 3.5em;
@@ -867,7 +867,6 @@ html body section:nth-of-type(3) #description {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1pc;
-  width: 100%;
 }
 
 html body section:nth-of-type(3) #description #titre {
@@ -886,33 +885,6 @@ html body section:nth-of-type(3) #description a {
   height: 2pc;
 }
 
-@media screen and (min-width: 1155px) {
-  html body section:nth-of-type(3) #description #description {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (max-width: 1155px) {
-  html body section:nth-of-type(3) #description {
-    /*#description {
-            margin-left: 20%;
-            margin-right: 20%;
-            margin-top: 10%;
-            margin-bottom: 10%;
-          }*/
-  }
-  html body section:nth-of-type(3) #description #titre {
-    font-size: 75%;
-  }
-  html body section:nth-of-type(3) #description .item {
-    -webkit-box-shadow: 8px 8px 8px #888888;
-            box-shadow: 8px 8px 8px #888888;
-  }
-}
-
 html body section:nth-of-type(3) #description #texte {
   padding: 1em;
   height: -webkit-fit-content;
@@ -922,6 +894,21 @@ html body section:nth-of-type(3) #description #texte {
 
 html body section:nth-of-type(3) #description .carousel-indicators {
   bottom: 0;
+}
+
+@media screen and (min-width: 1155px) {
+  html body section:nth-of-type(3) #description #description {
+    /*margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10%;
+            margin-bottom: 10%;*/
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(3) #description #titre {
+    font-size: 75%;
+  }
 }
 
 html body section:nth-of-type(4) {
@@ -952,8 +939,8 @@ html body section:nth-of-type(4) div ul {
 
 html body section:nth-of-type(4) div ul li:nth-of-type(1) div:nth-of-type(1) {
   background: url(./img/equipe/geoffroy.png);
-  height: 9pc;
-  width: 9pc;
+  height: 8pc;
+  width: 8pc;
   background-size: contain;
   background-position: center center;
 }
@@ -981,8 +968,8 @@ html body section:nth-of-type(4) div ul li:nth-of-type(2) {
 
 html body section:nth-of-type(4) div ul li:nth-of-type(2) div:nth-of-type(1) {
   background: url(./img/equipe/maxime.png);
-  height: 9pc;
-  width: 9pc;
+  height: 8pc;
+  width: 8pc;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: maxime;
@@ -992,8 +979,8 @@ html body section:nth-of-type(4) div ul li:nth-of-type(2) div:nth-of-type(1) {
 
 html body section:nth-of-type(4) div ul li:nth-of-type(2) > div:nth-of-type(2) {
   background: url(./img/mosaique/carreNoir.png);
-  height: 9pc;
-  width: 9pc;
+  height: 8pc;
+  width: 8pc;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: carreNoir;
@@ -1002,6 +989,9 @@ html body section:nth-of-type(4) div ul li:nth-of-type(2) > div:nth-of-type(2) {
 }
 
 @media screen and (max-width: 1155px) {
+  html body section:nth-of-type(4) div ul li:nth-of-type(2) {
+    display: block;
+  }
   html body section:nth-of-type(4) div ul li:nth-of-type(2) div:nth-of-type(1) {
     height: 5pc;
     width: 5pc;
@@ -1026,8 +1016,8 @@ html body section:nth-of-type(4) div ul li:nth-of-type(3) {
 
 html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(1) {
   background: url(./img/equipe/denis.png);
-  height: 9pc;
-  width: 9pc;
+  height: 8pc;
+  width: 8pc;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: denis;
@@ -1037,8 +1027,8 @@ html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(1) {
 
 html body section:nth-of-type(4) div ul li:nth-of-type(3) > div:nth-of-type(2) {
   background: url(./img/mosaique/carreBlanc.png);
-  height: 9pc;
-  width: 9pc;
+  height: 8pc;
+  width: 8pc;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: carreBlancDroite;
@@ -1048,8 +1038,8 @@ html body section:nth-of-type(4) div ul li:nth-of-type(3) > div:nth-of-type(2) {
 
 html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(3) {
   background: url(./img/mosaique/carreNoir.png);
-  height: 9pc;
-  width: 9pc;
+  height: 8pc;
+  width: 8pc;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: carreNoirMilieu;
@@ -1059,8 +1049,8 @@ html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(3) {
 
 html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(4) {
   background: url(./img/mosaique/carreNoir.png);
-  height: 9pc;
-  width: 9pc;
+  height: 8pc;
+  width: 8pc;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: carreNoirGauche;
@@ -1069,6 +1059,9 @@ html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(4) {
 }
 
 @media screen and (max-width: 1155px) {
+  html body section:nth-of-type(4) div ul li:nth-of-type(3) {
+    display: block;
+  }
   html body section:nth-of-type(4) div ul li:nth-of-type(3) div:nth-of-type(1) {
     height: 5pc;
     width: 5pc;
@@ -1123,6 +1116,8 @@ html body section:nth-of-type(5) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1131,14 +1126,9 @@ html body section:nth-of-type(5) {
 html body section:nth-of-type(5) div {
   text-align: center;
   width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -1149,6 +1139,19 @@ html body section:nth-of-type(5) div {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 2pc;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-height: 735px) {
+  html body section:nth-of-type(5) div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-top: 2pc;
     padding-bottom: 2pc;
   }
@@ -1161,12 +1164,13 @@ html body section:nth-of-type(5) div #carreJaune {
   width: 9pc;
   height: 9pc;
   display: inline-block;
+  margin: 0;
 }
 
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(5) div #carreJaune {
-    width: 4pc;
-    height: 4pc;
+    width: 2pc;
+    height: 2pc;
   }
 }
 
@@ -1233,8 +1237,8 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(3) {
 
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(3) {
-    width: 4pc;
-    height: 4pc;
+    width: 2pc;
+    height: 2pc;
   }
 }
 
@@ -1249,8 +1253,8 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
 
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
-    width: 4pc;
-    height: 4pc;
+    width: 2pc;
+    height: 2pc;
   }
 }
 
@@ -1265,8 +1269,8 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
 
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
-    width: 4pc;
-    height: 4pc;
+    width: 2pc;
+    height: 2pc;
   }
 }
 
