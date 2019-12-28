@@ -190,7 +190,6 @@ html {
           {
             height: fit-content;
             width: fit-content;
-            margin: 25% auto;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
             grid-template-areas: 
@@ -216,10 +215,17 @@ html {
 
       font-family: "Courier New", sans-serif;
       height:100vh;
+      width: 100%;
       display:flex;
       flex-direction: column;
       align-items:center;
       justify-content:center;
+
+      #texte {
+        margin: 1pc;
+        margin-top: 1px;
+        height: fit-content;
+      }
 
       #description {
         display:flex;
@@ -244,22 +250,8 @@ html {
           height: 2pc;
         }
         
-        #texte {
-          padding: 1em;
-          height: fit-content;
-        }
-        
         .carousel-indicators {
           bottom: 0;
-        }
-
-        @media screen and (min-width: $minw) {
-          #description {
-            /*margin-left: 20%;
-            margin-right: 20%;
-            margin-top: 10%;
-            margin-bottom: 10%;*/
-          }
         }
   
         @media screen and (max-width: $minw) {
@@ -267,6 +259,33 @@ html {
           #titre {
             font-size:75%;
           }
+        }
+      }
+
+      @media screen and (min-width: $minw), screen and (max-height: $minh) {
+        #imagesTravaux img,iframe {
+          max-width: 50vw !important;
+          max-height: 90vh !important;
+          min-height: 50vh;
+          min-width: 50vw;
+          object-fit: contain;
+        }
+      }
+
+      @media screen and (max-width: $minw), screen and (max-height: $minh) {
+        #imagesTravaux img,iframe {
+          max-width: 100vw !important;
+          max-height: 70vh !important;
+          min-height: 65vh;
+          min-width: 100vw;
+          object-fit: contain;
+        }
+      }
+
+      @media screen and (max-width: $minw) {
+        #logoGemeaux {
+          width: 70px !important;
+          height: 70px !important;
         }
       }
     }
@@ -431,7 +450,7 @@ html {
       p:nth-of-type(1) {
         margin-bottom: 3pc;
         display: flex;
-        justify-content: flex-end;
+        justify-content: baseline;
         font-size: 1.5em;
       }
     }
@@ -439,129 +458,123 @@ html {
     /* Cinquième section */
     section:nth-of-type(5) {
 
-      $tailleCarre : 9pc;
+      $tailleCarre : 7pc;
       height: 100vh;
       display: flex;
       justify-content:space-around;
       align-items:center;
-      $minIcon : 2pc;
-      
-      div{
-        text-align: center;
+      $minIcon : 4pc;
+      text-align: center;
+      width: 100%;
+
+      div { 
         width: 100%;
         display: flex;
         justify-content:space-around;
+        align-items: center;
+        flex-direction: column;
+  
+        @media screen and (min-width: 568px) {
+          flex-direction: row;
+        }
+      }
+
+      #carreJaune {
+        background: url(img/mosaique/carreJaune.png) no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: $tailleCarre;
+        height: $tailleCarre;
+        display: inline-block;
+        margin: 0;
 
         @media screen and (max-width: $minw) {
-          flex-direction: column;
-          padding: 2pc;
-          align-items:center;
+          width: $minIcon;
+          height: $minIcon;
         }
+      }
 
-        @media screen and (max-height: $minh) {
-          flex-direction: row;
-          padding-top: 2pc;
-          padding-bottom: 2pc;
-        }
+      div div {
 
-        #carreJaune {
-          background: url(img/mosaique/carreJaune.png) no-repeat;
-          background-size: contain;
-          background-position: center center;
-          width: $tailleCarre;
-          height: $tailleCarre;
-          display: inline-block;
-          margin: 0;
+        display: inline-block;
+        text-align: initial;
+        height: fit-content;
+        width: fit-content;
 
-          @media screen and (max-width: $minw) {
-            width: $minIcon;
-            height: $minIcon;
-          }
-        }
-
-        div {
-
-          display: inline-block;
-          text-align: initial;
-          height: fit-content;
+        p {
           width: fit-content;
+        }
+        p a span { font-size:2em; }
 
-          p {
-            width: fit-content;
-          }
-          p a span { font-size:2em; }
-
-          a {
-            text-decoration: none;
-            color: black;
-            font-family: "Courier New", sans-serif;
-          }
-
-          img {
-            display: inline-block;
-            height: 2pc;
-            width: 2pc;
-          }
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: "Courier New", sans-serif;
         }
 
-        div:nth-of-type(3) {
-
+        img {
           display: inline-block;
-          height: fit-content;
-          margin: auto 5%;
+          height: 2em;
+          width: 2em;
+        }
+      }
 
-          ul{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            list-style-type: none;
+      div div:nth-of-type(3) {
 
-            grid-template-areas: 
-            ". . carreblanc"
-            ". carrenoir1 ."
-            "carrenoir2 . .";
+        display: inline-block;
+        height: fit-content;
 
-            li:nth-child(3) {
-              background: url(img/mosaique/carreBlanc.png) no-repeat;
-              grid-area: "carreblanc";
-              background-size: contain;
-              background-position: center center;
-              width: $tailleCarre;
-              height: $tailleCarre;
+        ul{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          list-style-type: none;
 
-              @media screen and (max-width: $minw) {
-                width: $minIcon;
-                height: $minIcon;
-              }
+          grid-template-areas: 
+          ". . carreblanc"
+          ". carrenoir1 ."
+          "carrenoir2 . .";
+
+          li:nth-child(3) {
+            background: url(img/mosaique/carreBlanc.png) no-repeat;
+            grid-area: "carreblanc";
+            background-size: contain;
+            background-position: center center;
+            width: $tailleCarre;
+            height: $tailleCarre;
+
+            @media screen and (max-width: $minw) {
+              width: $minIcon;
+              height: $minIcon;
             }
+          }
 
-            li:nth-child(5) {
-              background: url(img/mosaique/carreNoir.png) no-repeat;
-              grid-area: "carrenoir1";
-              background-size: contain;
-              background-position: center center;
-              width: $tailleCarre;
-              height: $tailleCarre;
+          li:nth-child(5) {
+            background: url(img/mosaique/carreNoir.png) no-repeat;
+            grid-area: "carrenoir1";
+            background-size: contain;
+            background-position: center center;
+            width: $tailleCarre;
+            height: $tailleCarre;
 
-              @media screen and (max-width: $minw) {
-                width: $minIcon;
-                height: $minIcon;
-              }
+            @media screen and (max-width: $minw) {
+              width: $minIcon;
+              height: $minIcon;
             }
+          }
 
-            li:nth-child(7) {
-              background: url(img/mosaique/carreNoir.png) no-repeat;
-              grid-area: "carrenoir2";
-              background-size: contain;
-              background-position: center center;
-              width: $tailleCarre;
-              height: $tailleCarre;
+          li:nth-child(7) {
+            background: url(img/mosaique/carreNoir.png) no-repeat;
+            grid-area: "carrenoir2";
+            background-size: contain;
+            background-position: center center;
+            width: $tailleCarre;
+            height: $tailleCarre;
 
-              @media screen and (max-width: $minw) {
-                width: $minIcon;
-                height: $minIcon;
-            }
-            }
+            @media screen and (max-width: $minw) {
+              width: $minIcon;
+              height: $minIcon;
+          }
           }
         }
       }

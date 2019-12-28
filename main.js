@@ -32,39 +32,48 @@ function showProject(element) {
         // Elvis
         case 1:
             document.getElementById('imagesTravaux').outerHTML = 
-                "<div class='carousel-inner' id='imagesTravaux'> \
-                    <div class='item active' id='cadre1'> \
-                        <img src='./img/travaux/"+element.title+"/2.jpg' alt='PremiereImage' id='image1'> \
-                    </div> \
-                    <div class='item' id='cadre2'> \
-                        <img src='./img/travaux/"+element.title+"/3.jpg' alt='DeuxiemeImage' id='image2'> \
-                    </div> \
-                    <div class='item' id='cadre3'> \
-                        <img src='./img/travaux/"+element.title+"/4.jpg' alt='TroisiemeImage' id='image3'> \
-                    </div> \
-                    <div class='item' id='cadre4'> \
-                        <img src='./img/travaux/"+element.title+"/5.jpg' alt='QuatriemeImage' id='image4'> \
-                    </div> \
-                </div>";
+            "<div class='carousel-inner' id='imagesTravaux'> \
+                <div class='item active' id='cadre1'> \
+                    <img src='./img/travaux/"+element.title+"/1.jpg' alt='PremiereImage' id='image1'> \
+                </div> \
+                <div class='item' id='cadre2'> \
+                    <img src='./img/travaux/"+element.title+"/2.jpg' alt='DeuxiemeImage' id='image2'> \
+                </div> \
+                <div class='item' id='cadre3'> \
+                    <img src='./img/travaux/"+element.title+"/3.jpg' alt='TroisiemeImage' id='image3'> \
+                </div> \
+                <div class='item' id='cadre4'> \
+                    <img src='./img/travaux/"+element.title+"/4.jpg' alt='QuatriemeImage' id='image4'> \
+                </div> \
+                <div class='item' id='cadre5'> \
+                    <img src='./img/travaux/"+element.title+"/5.jpg' alt='CinquiemeImage' id='image5'> \
+                </div> \
+            </div>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";       
             break;
         // Fender
         case 2:
             document.getElementById('imagesTravaux').outerHTML = 
-                "<div class='carousel-inner' id='imagesTravaux'> \
-                    <div class='item active' id='cadre1'> \
-                        <img src='./img/travaux/"+element.title+"/2.jpg' alt='PremiereImage' id='image1'> \
-                    </div> \
-                    <div class='item' id='cadre2'> \
-                        <img src='./img/travaux/"+element.title+"/3.jpg' alt='DeuxiemeImage' id='image2'> \
-                    </div> \
-                    <div class='item' id='cadre3'> \
-                        <img src='./img/travaux/"+element.title+"/4.jpg' alt='TroisiemeImage' id='image3'> \
-                    </div> \
-                    <div class='item' id='cadre4'> \
-                        <img src='./img/travaux/"+element.title+"/5.jpg' alt='QuatriemeImage' id='image4'> \
-                    </div> \
-                </div>";
+            "<div class='carousel-inner' id='imagesTravaux'> \
+                <div class='item active' id='cadre1'> \
+                    <img src='./img/travaux/"+element.title+"/1.jpg' alt='PremiereImage' id='image1'> \
+                </div> \
+                <div class='item' id='cadre2'> \
+                    <img src='./img/travaux/"+element.title+"/2.jpg' alt='DeuxiemeImage' id='image2'> \
+                </div> \
+                <div class='item' id='cadre3'> \
+                    <img src='./img/travaux/"+element.title+"/3.jpg' alt='TroisiemeImage' id='image3'> \
+                </div> \
+                <div class='item' id='cadre4'> \
+                    <img src='./img/travaux/"+element.title+"/4.jpg' alt='QuatriemeImage' id='image4'> \
+                </div> \
+                <div class='item' id='cadre5'> \
+                    <img src='./img/travaux/"+element.title+"/5.jpg' alt='CinquiemeImage' id='image5'> \
+                </div> \
+                <div class='item' id='cadre6'> \
+                    <img src='./img/travaux/"+element.title+"/6.jpg' alt='SixiemeImage' id='image6'> \
+                </div> \
+            </div>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";           
             break;
         // StenslandGirard
@@ -123,16 +132,19 @@ function showProject(element) {
             document.getElementById('imagesTravaux').outerHTML = 
                 "<div class='carousel-inner' id='imagesTravaux'> \
                     <div class='item active' id='cadre1'> \
-                        <img src='./img/travaux/"+element.title+"/2.jpg' alt='PremiereImage' id='image1'> \
+                        <img src='./img/travaux/"+element.title+"/1.jpg' alt='PremiereImage' id='image1'> \
                     </div> \
                     <div class='item' id='cadre2'> \
-                        <img src='./img/travaux/"+element.title+"/3.jpg' alt='DeuxiemeImage' id='image2'> \
+                        <img src='./img/travaux/"+element.title+"/2.jpg' alt='DeuxiemeImage' id='image2'> \
                     </div> \
                     <div class='item' id='cadre3'> \
-                        <img src='./img/travaux/"+element.title+"/4.jpg' alt='TroisiemeImage' id='image3'> \
+                        <img src='./img/travaux/"+element.title+"/3.jpg' alt='TroisiemeImage' id='image3'> \
                     </div> \
                     <div class='item' id='cadre4'> \
-                        <img src='./img/travaux/"+element.title+"/5.jpg' alt='QuatriemeImage' id='image4'> \
+                        <img src='./img/travaux/"+element.title+"/4.jpg' alt='QuatriemeImage' id='image4'> \
+                    </div> \
+                    <div class='item' id='cadre5'> \
+                        <img src='./img/travaux/"+element.title+"/5.jpg' alt='CinquiemeImage' id='image5'> \
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";  
@@ -145,7 +157,13 @@ function showProject(element) {
                         <iframe src='https://player.vimeo.com/video/329202293' id='image1' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe> \
                     </div> \
                 </div>";
-            document.getElementById('texte').innerHTML = "++ production : Guillaume Lespérance et KOTV ++ réalisation : Simon-Olivier Fecteau (mettre le logo des Gémeaux finaliste 2019)";
+            document.getElementById('texte').innerHTML = "++ production : Guillaume Lespérance et KOTV ++ réalisation : Simon-Olivier Fecteau";
+            var gemeauxLogo = document.createElement('img');
+            gemeauxLogo.src = './img/travaux/gemeauxLogo.png'
+            gemeauxLogo.setAttribute("id", "logoGemeaux");
+            gemeauxLogo.style.height = '100px';
+            gemeauxLogo.style.width = '100px';
+            document.getElementById("description").appendChild(gemeauxLogo);
             break;
         // Cerebrum
         case 8:
@@ -176,12 +194,6 @@ function showProject(element) {
                     </div> \
                 </div>";
             document.getElementById('texte').innerHTML = "++ production : Radio-Canada ++ réalisation : Guy Gagnon";
-            var gemeauxLogo = document.createElement('img');
-            gemeauxLogo.src = './img/travaux/gemeauxLogo.png'
-            gemeauxLogo.setAttribute("id", "logoGemeaux");
-            gemeauxLogo.style.height = '100px';
-            gemeauxLogo.style.width = '100px';
-            document.getElementById("fenetreProjets").appendChild(gemeauxLogo);
             break;
         // LMalediction
         case 11:

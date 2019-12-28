@@ -745,7 +745,6 @@ html body section:nth-of-type(2) div div span:hover, html body section:nth-of-ty
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 25% auto;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[4];
@@ -837,6 +836,7 @@ html body section:nth-of-type(2) div div span:hover, html body section:nth-of-ty
 html body section:nth-of-type(3) {
   font-family: "Courier New", sans-serif;
   height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,6 +850,14 @@ html body section:nth-of-type(3) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+html body section:nth-of-type(3) #texte {
+  margin: 1pc;
+  margin-top: 1px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 html body section:nth-of-type(3) #description {
@@ -885,29 +893,42 @@ html body section:nth-of-type(3) #description a {
   height: 2pc;
 }
 
-html body section:nth-of-type(3) #description #texte {
-  padding: 1em;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 html body section:nth-of-type(3) #description .carousel-indicators {
   bottom: 0;
-}
-
-@media screen and (min-width: 1155px) {
-  html body section:nth-of-type(3) #description #description {
-    /*margin-left: 20%;
-            margin-right: 20%;
-            margin-top: 10%;
-            margin-bottom: 10%;*/
-  }
 }
 
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(3) #description #titre {
     font-size: 75%;
+  }
+}
+
+@media screen and (min-width: 1155px), screen and (max-height: 735px) {
+  html body section:nth-of-type(3) #imagesTravaux img, html body section:nth-of-type(3) iframe {
+    max-width: 50vw !important;
+    max-height: 90vh !important;
+    min-height: 50vh;
+    min-width: 50vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 1155px), screen and (max-height: 735px) {
+  html body section:nth-of-type(3) #imagesTravaux img, html body section:nth-of-type(3) iframe {
+    max-width: 100vw !important;
+    max-height: 70vh !important;
+    min-height: 65vh;
+    min-width: 100vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  html body section:nth-of-type(3) #logoGemeaux {
+    width: 70px !important;
+    height: 70px !important;
   }
 }
 
@@ -1105,9 +1126,9 @@ html body section:nth-of-type(4) p:nth-of-type(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   font-size: 1.5em;
 }
 
@@ -1121,56 +1142,49 @@ html body section:nth-of-type(5) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 html body section:nth-of-type(5) div {
-  text-align: center;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media screen and (max-width: 1155px) {
-  html body section:nth-of-type(5) div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2pc;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (max-height: 735px) {
+@media screen and (min-width: 568px) {
   html body section:nth-of-type(5) div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-top: 2pc;
-    padding-bottom: 2pc;
   }
 }
 
-html body section:nth-of-type(5) div #carreJaune {
+html body section:nth-of-type(5) #carreJaune {
   background: url(img/mosaique/carreJaune.png) no-repeat;
   background-size: contain;
   background-position: center center;
-  width: 9pc;
-  height: 9pc;
+  width: 7pc;
+  height: 7pc;
   display: inline-block;
   margin: 0;
 }
 
 @media screen and (max-width: 1155px) {
-  html body section:nth-of-type(5) div #carreJaune {
-    width: 2pc;
-    height: 2pc;
+  html body section:nth-of-type(5) #carreJaune {
+    width: 4pc;
+    height: 4pc;
   }
 }
 
@@ -1203,8 +1217,8 @@ html body section:nth-of-type(5) div div a {
 
 html body section:nth-of-type(5) div div img {
   display: inline-block;
-  height: 2pc;
-  width: 2pc;
+  height: 2em;
+  width: 2em;
 }
 
 html body section:nth-of-type(5) div div:nth-of-type(3) {
@@ -1212,7 +1226,6 @@ html body section:nth-of-type(5) div div:nth-of-type(3) {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: auto 5%;
 }
 
 html body section:nth-of-type(5) div div:nth-of-type(3) ul {
@@ -1231,14 +1244,14 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(3) {
   grid-area: "carreblanc";
   background-size: contain;
   background-position: center center;
-  width: 9pc;
-  height: 9pc;
+  width: 7pc;
+  height: 7pc;
 }
 
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(3) {
-    width: 2pc;
-    height: 2pc;
+    width: 4pc;
+    height: 4pc;
   }
 }
 
@@ -1247,14 +1260,14 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
   grid-area: "carrenoir1";
   background-size: contain;
   background-position: center center;
-  width: 9pc;
-  height: 9pc;
+  width: 7pc;
+  height: 7pc;
 }
 
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(5) {
-    width: 2pc;
-    height: 2pc;
+    width: 4pc;
+    height: 4pc;
   }
 }
 
@@ -1263,14 +1276,14 @@ html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
   grid-area: "carrenoir2";
   background-size: contain;
   background-position: center center;
-  width: 9pc;
-  height: 9pc;
+  width: 7pc;
+  height: 7pc;
 }
 
 @media screen and (max-width: 1155px) {
   html body section:nth-of-type(5) div div:nth-of-type(3) ul li:nth-child(7) {
-    width: 2pc;
-    height: 2pc;
+    width: 4pc;
+    height: 4pc;
   }
 }
 
